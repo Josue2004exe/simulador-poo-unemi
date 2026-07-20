@@ -1,0 +1,1697 @@
+const QUESTIONS_DATA = {
+  "total_preguntas": 125,
+  "preguntas": [
+    {
+      "id": "2b4778e1a85a36729c13c7dd7bb3b3632bcb90d13b1310aad936af5baecb2539",
+      "image_path": "data/preguntas_img/pregunta_2b4778e1a85a36729c13c7dd7bb3b3632bcb90d13b1310aad936af5baecb2539.png",
+      "text_snippet": "Un estudiante debe elegir un lenguaje para desarrollar aplicaciones web y además desea utilizar herramientas de inteligencia artificial y ciencia de d",
+      "options": [
+        "Porque reemplaza completamente el uso de bases de datos en aplicaciones web.",
+        "Ninguna respuesta es correcta.",
+        "Porque únicamente permite desarrollar aplicaciones web utilizando Django.",
+        "Porque posee compatibilidad con inteligencia artificial y ciencia de datos, además de frameworks para desarrollo web."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "e0e27d43c7929e4dcb7f7ab8c674bab9d79c2086d82976873a139f68dc472d89",
+      "image_path": "data/preguntas_img/pregunta_e0e27d43c7929e4dcb7f7ab8c674bab9d79c2086d82976873a139f68dc472d89.png",
+      "text_snippet": "En una plataforma virtual de aprendizaje, un estudiante ingresa su usuario y contraseña para acceder a su cuenta. ¿Cuál de las siguientes acciones cor",
+      "options": [
+        "Validar las credenciales del estudiante y determinar si puede acceder al sistema.",
+        "Enviar la solicitud de autenticación al servidor antes de que el usuario presione el botón \"Iniciar sesión\".",
+        "Ninguna respuesta es correcta.",
+        "Consultar la base de datos para verificar que el usuario y la contraseña sean correctos."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ff469b1ad098372078fdfd361d3f2d1cf3ebfbb9cfd852e63a24ed54bd21ddae",
+      "image_path": "data/preguntas_img/pregunta_ff469b1ad098372078fdfd361d3f2d1cf3ebfbb9cfd852e63a24ed54bd21ddae.png",
+      "text_snippet": "Un proyecto Django ya existe y ahora el desarrollador necesita crear un módulo independiente para administrar la información de estudiantes. ¿Qué coma",
+      "options": [
+        "python manage.py makemigrations",
+        "django-admin startproject",
+        "Ninguna respuesta es correcta.",
+        "python manage.py startapp"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "bf444dab5c7137cff612e872dcc265b8888d19bd6271addc2c7062e1256e224c",
+      "image_path": "data/preguntas_img/pregunta_bf444dab5c7137cff612e872dcc265b8888d19bd6271addc2c7062e1256e224c.png",
+      "text_snippet": "Observe el siguiente código:\n\n\n\n\n¿Qué efecto produce el parámetro blank=True?",
+      "options": [
+        "Permite que el campo pueda dejarse vacío durante la validación de formularios.",
+        "Permite que el campo sea eliminado cuando no tenga información.",
+        "Ninguna respuesta es correcta.",
+        "Permite que el campo almacene automáticamente el valor NULL en la base de datos."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "f3c9d7903637195986210bd0200becc98c729023b0027ec5b20e62a0d14787b7",
+      "image_path": "data/preguntas_img/pregunta_f3c9d7903637195986210bd0200becc98c729023b0027ec5b20e62a0d14787b7.png",
+      "text_snippet": "En el diseño de una clase, ¿por qué es importante definir correctamente el nombre de la clase?",
+      "options": [
+        "Porque permite ejecutar directamente los métodos sin necesidad de instancias.",
+        "Porque representa de forma clara la entidad del mundo real que se desea modelar.",
+        "Porque define automáticamente los atributos y métodos sin necesidad de declararlos.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "715586c62f258903201fc8872aee86ed04b954ed2a0deb2a1993f2acfa7240f5",
+      "image_path": "data/preguntas_img/pregunta_715586c62f258903201fc8872aee86ed04b954ed2a0deb2a1993f2acfa7240f5.png",
+      "text_snippet": "Un sistema almacena temporalmente la información de un usuario en un diccionario de Python y posteriormente necesita transmitir esos datos a una aplic",
+      "options": [
+        "Debe convertirse en un archivo de Python para que la aplicación móvil pueda ejecutarlo.",
+        "Debe convertirse en una cadena con formato JSON para facilitar el intercambio de datos entre aplicaciones.",
+        "Ninguna respuesta es correcta.",
+        "Debe permanecer como un diccionario de Python, ya que todas las aplicaciones interpretan ese formato."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "538535fec37bc6cafea8a55bc82cf9dbb2a576bb51f7e27ecfced4e38852bfc1",
+      "image_path": "data/preguntas_img/pregunta_538535fec37bc6cafea8a55bc82cf9dbb2a576bb51f7e27ecfced4e38852bfc1.png",
+      "text_snippet": "En un sistema, se define una clase Vehículo y a partir de ella se crean clases Auto y Moto. ¿Qué principio se está aplicando?",
+      "options": [
+        "Abstracción, porque se eliminan detalles innecesarios del vehículo.",
+        "Ninguna respuesta es correcta.",
+        "Encapsulación, porque se restringe el acceso a los atributos internos.",
+        "Herencia, porque las clases hijas adquieren características de la clase padre."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "2457288a4f17ce5d9da47f67c76ec2c868a881f7de3aa9e3612d469422bec464",
+      "image_path": "data/preguntas_img/pregunta_2457288a4f17ce5d9da47f67c76ec2c868a881f7de3aa9e3612d469422bec464.png",
+      "text_snippet": "¿Cuál es el propósito de las etiquetas semánticas como <header>, <section> o <footer>?",
+      "options": [
+        "Aplicar estilos visuales específicos a los elementos del documento.",
+        "Definir la lógica de interacción entre usuario y sistema.",
+        "Organizar el contenido del documento de forma estructurada y significativa.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "fd802df333917c9f928f07bfb5b3e5ef19f7ec65cdb0d892a9b97b26d840649a",
+      "image_path": "data/preguntas_img/pregunta_fd802df333917c9f928f07bfb5b3e5ef19f7ec65cdb0d892a9b97b26d840649a.png",
+      "text_snippet": "Analice el código completo de la clase RepoJson. Luego, observe el fragmento que se agrega al final del programa y determine cuál será el resultado qu",
+      "options": [
+        "None",
+        "False",
+        "Ninguna respuesta es correcta.",
+        "{\"id\": 1, \"nombre\": \"Ana\", \"estado\": False}"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "6c5e94d45bcf83f0c9103b22799bfea1f1a4c347e59c59abc47c5f649f7133ac",
+      "image_path": "data/preguntas_img/pregunta_6c5e94d45bcf83f0c9103b22799bfea1f1a4c347e59c59abc47c5f649f7133ac.png",
+      "text_snippet": "Al crear un nuevo proyecto, un estudiante decide instalar varias librerías para utilizarlas únicamente en ese desarrollo, evitando que afecten otros p",
+      "options": [
+        "En el directorio \"venv\" asociado al proyecto.",
+        "En el directorio \".idea\" asociado al proyecto.",
+        "Ninguna respuesta es correcta.",
+        "En el archivo \"requirements.txt\" asociado al proyecto."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "e9c8d498157a3c4a2b41c42e3776a610296e4146de640c5be393580922ee32d5",
+      "image_path": "data/preguntas_img/pregunta_e9c8d498157a3c4a2b41c42e3776a610296e4146de640c5be393580922ee32d5.png",
+      "text_snippet": "Una empresa desarrolla un sistema web donde los usuarios interactúan mediante un navegador y toda la información se almacena en un servidor central. ¿",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Captura las acciones del usuario, envía solicitudes al servidor y presenta las respuestas recibidas.",
+        "Captura las acciones del usuario, almacena permanentemente la información y responde a otros clientes conectados.",
+        "Captura las acciones del usuario, procesa la lógica del negocio y actualiza directamente la base de datos."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "3bd24356d1c995aaf13dbc3101f8618b43fabdd34c882f915c252f6c97a8f552",
+      "image_path": "data/preguntas_img/pregunta_3bd24356d1c995aaf13dbc3101f8618b43fabdd34c882f915c252f6c97a8f552.png",
+      "text_snippet": "Durante la depuración de un programa en PyCharm, un estudiante necesita comprobar cómo cambia el valor de la variable \"saldo\" antes y después de ejecu",
+      "options": [
+        "Colocar un breakpoint después de la operación, avanzar con Step Into e inspeccionar el valor de \"saldo\" en cada pausa.",
+        "Colocar un breakpoint antes de la operación, avanzar con Step Over e inspeccionar el valor de \"saldo\" en cada pausa.",
+        "Ninguna respuesta es correcta.",
+        "Colocar un breakpoint antes de la operación, avanzar con Step Into e inspeccionar el valor de \"saldo\" en cada pausa."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "c553009a9ca36518e316d3f1cc637d723a0dde88528bf74fedc2f3229d344f78",
+      "image_path": "data/preguntas_img/pregunta_c553009a9ca36518e316d3f1cc637d723a0dde88528bf74fedc2f3229d344f78.png",
+      "text_snippet": "Un estudiante ejecuta el comando django-admin startproject y posteriormente intenta ejecutar nuevamente el mismo comando dentro del proyecto ya creado",
+      "options": [
+        "python manage.py makemigrations",
+        "python manage.py runserver",
+        "python manage.py startapp",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "b0a00318ab96dd48b50f5b20ec5113fbcbd41208b78c48aa32ef80971e1f200a",
+      "image_path": "data/preguntas_img/pregunta_b0a00318ab96dd48b50f5b20ec5113fbcbd41208b78c48aa32ef80971e1f200a.png",
+      "text_snippet": "Un método que evalúa si un estudiante cumple con los requisitos para inscribirse en una materia corresponde a:",
+      "options": [
+        "Constructor, porque crea el objeto estudiante en el sistema.",
+        "Analizador, porque procesa información para generar un resultado.",
+        "Consultor, porque muestra información sin realizar evaluaciones.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "bf6b3c1890386d07a27cbc18e79baa7533b066cfdc5b1cd18de22f1cd4834926",
+      "image_path": "data/preguntas_img/pregunta_bf6b3c1890386d07a27cbc18e79baa7533b066cfdc5b1cd18de22f1cd4834926.png",
+      "text_snippet": "Si una clase define atributos y métodos que luego son utilizados por múltiples objetos, ¿qué representa esa clase?",
+      "options": [
+        "Un molde o plantilla para crear objetos con características similares.",
+        "Ninguna respuesta es correcta.",
+        "Un objeto específico con valores definidos en tiempo de ejecución.",
+        "Un método que agrupa acciones relacionadas del sistema."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "f09228eca8bc9443a82ce3683f3549661a518fb848284a388e2c1a3ce2b9ed89",
+      "image_path": "data/preguntas_img/pregunta_f09228eca8bc9443a82ce3683f3549661a518fb848284a388e2c1a3ce2b9ed89.png",
+      "text_snippet": "¿Cuál es la principal finalidad de utilizar JSON en aplicaciones desarrolladas con Python?",
+      "options": [
+        "Facilitar el almacenamiento permanente de información en memoria mediante un formato de texto estándar.",
+        "Facilitar la conversión automática de programas Python en aplicaciones web mediante un formato de texto estándar.",
+        "Ninguna respuesta es correcta.",
+        "Facilitar el intercambio de información entre aplicaciones mediante un formato de texto estándar."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "50dd15848faf5ccc3b978e0f06492593b25d324c181fc2d58dd53ce9c8d2ef93",
+      "image_path": "data/preguntas_img/pregunta_50dd15848faf5ccc3b978e0f06492593b25d324c181fc2d58dd53ce9c8d2ef93.png",
+      "text_snippet": "Una empresa desea desarrollar una plataforma que pueda crecer con miles de usuarios sin modificar completamente su estructura interna. ¿Cuál de las si",
+      "options": [
+        "La sintaxis sencilla.",
+        "Ninguna respuesta es correcta.",
+        "La escalabilidad.",
+        "La existencia de múltiples motores de búsqueda."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "2efd20ab0ff351929fe4876e8ae4be9358d8f6d9f6e3f7831adac7b39102e9e2",
+      "image_path": "data/preguntas_img/pregunta_2efd20ab0ff351929fe4876e8ae4be9358d8f6d9f6e3f7831adac7b39102e9e2.png",
+      "text_snippet": "¿Cuál es la diferencia fundamental entre Internet y la Web?",
+      "options": [
+        "Internet es la infraestructura de red, mientras que la Web es un servicio que funciona sobre ella.",
+        "Ninguna respuesta es correcta.",
+        "Internet es un conjunto de páginas web y la Web es la red física que las conecta.",
+        "Ambos conceptos son equivalentes y se utilizan indistintamente en todos los contextos."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "3cad2c0e71f1201b0960f7bf63547dac7c8d6657b2264661be892da30b339040",
+      "image_path": "data/preguntas_img/pregunta_3cad2c0e71f1201b0960f7bf63547dac7c8d6657b2264661be892da30b339040.png",
+      "text_snippet": "Observe el siguiente archivo admin.py:\n\n\n\n\nEl proyecto inicia correctamente y el modelo Estudiante existe en la base de datos, pero sigue sin aparecer",
+      "options": [
+        "Registrar el modelo utilizando admin.site.register(Estudiante).",
+        "Ninguna respuesta es correcta.",
+        "Registrar el modelo utilizando admin.register.site(Estudiante).",
+        "Ejecutar nuevamente python manage.py makemigrations."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "0965ef843e58cd27eadb7db6ca30ef9c186844238e8c5624f988425dc82ccd8b",
+      "image_path": "data/preguntas_img/pregunta_0965ef843e58cd27eadb7db6ca30ef9c186844238e8c5624f988425dc82ccd8b.png",
+      "text_snippet": "Analice el código completo de la clase RepoJson. Luego, observe el fragmento que se agrega al final del programa y determine cuál será el resultado qu",
+      "options": [
+        "None",
+        "Ana",
+        "False",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "195618f5528ece52e3c17cdea16cefa18c42f13c444c83909a11f335064cb40f",
+      "image_path": "data/preguntas_img/pregunta_195618f5528ece52e3c17cdea16cefa18c42f13c444c83909a11f335064cb40f.png",
+      "text_snippet": "Un desarrollador necesita enviar la información de un diccionario de Python a un servicio web mediante una solicitud HTTP. ¿Qué acción debería realiza",
+      "options": [
+        "Convertir el diccionario en una cadena con formato JSON mediante un proceso de serialización.",
+        "Ninguna respuesta es correcta.",
+        "Convertir la cadena JSON recibida en un diccionario de Python mediante un proceso de deserialización.",
+        "Convertir el diccionario en una cadena con formato JSON después de recibir la respuesta del servicio web."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "2b14053a95747f89a7a748641ba7a3ac2f2a7685d48c7796b7e79085bbcdb632",
+      "image_path": "data/preguntas_img/pregunta_2b14053a95747f89a7a748641ba7a3ac2f2a7685d48c7796b7e79085bbcdb632.png",
+      "text_snippet": "Un administrador necesita modificar la información de un producto existente en una tienda virtual, reemplazando los datos anteriores por los nuevos. ¿",
+      "options": [
+        "GET, porque consulta el recurso y posteriormente actualiza su información.",
+        "PUT, porque está diseñado para actualizar o reemplazar la información de un recurso existente.",
+        "POST, porque crea automáticamente una nueva versión del recurso sin modificar la existente.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "e0d1b02695d52deb444f4d43b6ad67bbfa4fd0a4763d9f41fb38d15e91c50365",
+      "image_path": "data/preguntas_img/pregunta_e0d1b02695d52deb444f4d43b6ad67bbfa4fd0a4763d9f41fb38d15e91c50365.png",
+      "text_snippet": "Un método que permite mostrar el saldo actual de una cuenta sin modificarlo se clasifica como:",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Constructor, porque inicializa el objeto con valores predeterminados.",
+        "Consultor, porque presenta información sin alterar el estado del objeto.",
+        "Modificador, porque cambia indirectamente el estado del objeto."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "1bd63af996f0f8a33235723d0ed161bf2d5ad013b4c9c93e48a848e2eec77ac3",
+      "image_path": "data/preguntas_img/pregunta_1bd63af996f0f8a33235723d0ed161bf2d5ad013b4c9c93e48a848e2eec77ac3.png",
+      "text_snippet": "Un equipo de desarrollo necesita construir una aplicación web que incluya autenticación de usuarios, formularios, acceso a bases de datos y medidas bá",
+      "options": [
+        "Permite reutilizar componentes, pero obliga a desarrollar desde cero la autenticación y la seguridad.",
+        "Permite reutilizar componentes y funcionalidades comunes desarrollándolas desde cero.",
+        "Permite reutilizar componentes únicamente relacionados con el diseño visual de la aplicación.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "5d305db1379a48eabce7ae4b827eeb2280497e5781be4a8de3e6f3c5437c0bdd",
+      "image_path": "data/preguntas_img/pregunta_5d305db1379a48eabce7ae4b827eeb2280497e5781be4a8de3e6f3c5437c0bdd.png",
+      "text_snippet": "Después de crear un nuevo modelo en Django, el desarrollador necesita generar los archivos que contienen los cambios detectados en la estructura de la",
+      "options": [
+        "python manage.py runserver",
+        "python manage.py migrate",
+        "Ninguna respuesta es correcta.",
+        "python manage.py makemigrations"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "dab13a6ba4b6207a81a7649db87595080a7ce697b9ed52e27d3718a30b506455",
+      "image_path": "data/preguntas_img/pregunta_dab13a6ba4b6207a81a7649db87595080a7ce697b9ed52e27d3718a30b506455.png",
+      "text_snippet": "¿Por qué la Programación Orientada a Objetos facilita el modelado de problemas reales?",
+      "options": [
+        "Porque representa entidades del mundo real mediante objetos con atributos y métodos.",
+        "Porque organiza el código en instrucciones secuenciales fáciles de seguir.",
+        "Ninguna respuesta es correcta.",
+        "Porque elimina completamente la necesidad de definir estructuras de datos."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "1f98e54ffbb4b6d7f6e478e706639d6d1f8295bf59bb4cfaffe31a40d1e1d10e",
+      "image_path": "data/preguntas_img/pregunta_1f98e54ffbb4b6d7f6e478e706639d6d1f8295bf59bb4cfaffe31a40d1e1d10e.png",
+      "text_snippet": "Analice el código completo de la clase RepoJson. Luego, observe el fragmento que se agrega al final del programa y determine cuál será el resultado qu",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "2",
+        "0",
+        "1"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "19cd408e5f0252014f08ba52428909bb00abcef84777bbd3193d6065aa995c60",
+      "image_path": "data/preguntas_img/pregunta_19cd408e5f0252014f08ba52428909bb00abcef84777bbd3193d6065aa995c60.png",
+      "text_snippet": "Observe el siguiente código:\n\n\n\n\n¿Qué representa la clase Persona dentro de Django?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Una vista encargada de mostrar la información de las personas.",
+        "Un formulario que permitirá registrar personas desde una página web.",
+        "Un modelo que será utilizado para crear una tabla en la base de datos."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "7e8d1918e7c0f98cc27e33852389bb90692010227d35c675adc7f267d968ef9b",
+      "image_path": "data/preguntas_img/pregunta_7e8d1918e7c0f98cc27e33852389bb90692010227d35c675adc7f267d968ef9b.png",
+      "text_snippet": "¿Por qué se dice que HTML y CSS trabajan en conjunto?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Porque ambos lenguajes cumplen exactamente la misma función en el desarrollo web.",
+        "Porque HTML define la estructura del contenido y CSS define su presentación visual.",
+        "Porque HTML se utiliza únicamente para estilos y CSS para contenido estructural."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "4e94cbc1f2db772f2b05e749369cdd3b360edc32437905a0ea815d1dbb8f1a49",
+      "image_path": "data/preguntas_img/pregunta_4e94cbc1f2db772f2b05e749369cdd3b360edc32437905a0ea815d1dbb8f1a49.png",
+      "text_snippet": "Un estudiante eliminó accidentalmente el archivo \"prestamo.py\" de un proyecto. Al revisar la estructura del proyecto observa que permanecen \"main.py\",",
+      "options": [
+        "El proyecto pierde uno de los módulos que conforman la estructura del sistema, aunque los demás archivos continúan organizados dentro del mismo proyecto.",
+        "Ninguna respuesta es correcta.",
+        "El proyecto deja de reconocer automáticamente el directorio \"venv\", aunque los demás módulos permanecen organizados.",
+        "El proyecto elimina automáticamente el archivo \"main.py\" para mantener la estructura propuesta."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "bc3cd86bd2a9694eacc51815eba079c2a1a8087cb3fd51041b73a7249fb2c1c8",
+      "image_path": "data/preguntas_img/pregunta_bc3cd86bd2a9694eacc51815eba079c2a1a8087cb3fd51041b73a7249fb2c1c8.png",
+      "text_snippet": "Un sistema de gestión académica permite que un estudiante actualice su dirección de correo electrónico desde su perfil. ¿Cuál de los siguientes método",
+      "options": [
+        "GET, porque permite recuperar el recurso y reemplazar automáticamente su contenido.",
+        "POST, porque permite consultar la información del recurso antes de modificarla.",
+        "Ninguna respuesta es correcta.",
+        "PUT, porque permite actualizar la información de un recurso existente en el servidor."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "074ba48e47994564048da4f3a6afd6caeda0f1b6a27e98ebe1ef65860833fa82",
+      "image_path": "data/preguntas_img/pregunta_074ba48e47994564048da4f3a6afd6caeda0f1b6a27e98ebe1ef65860833fa82.png",
+      "text_snippet": "Durante el desarrollo de una aplicación, un programador ejecuta el comando python manage.py migrate sin haber ejecutado previamente python manage.py m",
+      "options": [
+        "No se generarán nuevas migraciones para reflejar los cambios realizados en el modelo.",
+        "El servidor dejará de funcionar hasta crear un nuevo proyecto.",
+        "Ninguna respuesta es correcta.",
+        "El proyecto Django se eliminará y deberá crearse nuevamente."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "f9fed5e279c87df48cb8ca0029511ddee722a7cff3fd04b8211019deedf7178e",
+      "image_path": "data/preguntas_img/pregunta_f9fed5e279c87df48cb8ca0029511ddee722a7cff3fd04b8211019deedf7178e.png",
+      "text_snippet": "Después de aplicar json.dumps() sobre un objeto de Python, ¿cuál es el resultado obtenido?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Una cadena en formato JSON lista para ser enviada o almacenada.",
+        "Un objeto de Python reconstruido a partir de una cadena en formato JSON.",
+        "Una cadena en formato JSON convertida nuevamente en un diccionario de Python."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "6d4669058795286ebf75696d89cfc4d0deb38019897c83c6a80ea83ae5829eba",
+      "image_path": "data/preguntas_img/pregunta_6d4669058795286ebf75696d89cfc4d0deb38019897c83c6a80ea83ae5829eba.png",
+      "text_snippet": "¿Cuál es el beneficio principal de separar estructura (HTML) y diseño (CSS)?",
+      "options": [
+        "Evita la necesidad de utilizar etiquetas HTML en el desarrollo web.",
+        "Elimina completamente la necesidad de aplicar estilos visuales.",
+        "Ninguna respuesta es correcta.",
+        "Permite mayor flexibilidad, mantenimiento y reutilización del código."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "f776a38056de15a6ffd1fcb5628f0a8304701b42a047df93e69a10c935450df6",
+      "image_path": "data/preguntas_img/pregunta_f776a38056de15a6ffd1fcb5628f0a8304701b42a047df93e69a10c935450df6.png",
+      "text_snippet": "Analice el código completo de la clase RepoJson. Luego, observe el fragmento que se agrega al final del programa y determine cuál será el resultado qu",
+      "options": [
+        "1",
+        "None",
+        "Ninguna respuesta es correcta.",
+        "0"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "5913a98a784fe3dcd0f871bd0baccebdc3510b817886ef5853d7012bf523fff9",
+      "image_path": "data/preguntas_img/pregunta_5913a98a784fe3dcd0f871bd0baccebdc3510b817886ef5853d7012bf523fff9.png",
+      "text_snippet": "En un sistema de restaurante, se identifican las clases Cliente, Mesero y Pedido. ¿Cuál es la razón principal para definir estas clases?",
+      "options": [
+        "Representar entidades del mundo real con atributos y comportamientos específicos.",
+        "Agrupar funciones del sistema sin considerar las características de cada entidad.",
+        "Ninguna respuesta es correcta.",
+        "Dividir el sistema en módulos independientes sin interacción entre ellos."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "9568ecf72e5121ab1078b4ec12daf84edba6a53d85e35b8f886c9e624ae1755f",
+      "image_path": "data/preguntas_img/pregunta_9568ecf72e5121ab1078b4ec12daf84edba6a53d85e35b8f886c9e624ae1755f.png",
+      "text_snippet": "Mientras desarrolla una aplicación, un estudiante desea localizar rápidamente un error lógico que ocurre durante la ejecución de un método. ¿Qué estra",
+      "options": [
+        "Colocar un breakpoint y ejecutar el programa en modo depuración para analizar la ejecución paso a paso.",
+        "Colocar un breakpoint al finalizar el método y ejecutar el programa en modo depuración.",
+        "Ninguna respuesta es correcta.",
+        "Colocar un breakpoint y ejecutar el programa normalmente para analizar la ejecución paso a paso."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "f6348a85b0671d30bb7c276229305cf79bd450c2c45f24f7cf77524345405b1e",
+      "image_path": "data/preguntas_img/pregunta_f6348a85b0671d30bb7c276229305cf79bd450c2c45f24f7cf77524345405b1e.png",
+      "text_snippet": "En una tabla llamada Estudiantes existen las columnas nombre, correo y edad. Si un desarrollador necesita obtener únicamente el valor almacenado en co",
+      "options": [
+        "Una tabla relacionada.",
+        "Un registro.",
+        "Ninguna respuesta es correcta.",
+        "Un campo."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "fba4099cbab73a1091d27bd38eaa29e11c78165eca1203ec1bfb78b0acdc55ea",
+      "image_path": "data/preguntas_img/pregunta_fba4099cbab73a1091d27bd38eaa29e11c78165eca1203ec1bfb78b0acdc55ea.png",
+      "text_snippet": "Observe el siguiente modelo:\n\n\n\n\nEl desarrollador ejecuta correctamente los comandos python manage.py makemigrations y python manage.py migrate. Poste",
+      "options": [
+        "El modelo no fue registrado en el archivo admin.py.",
+        "El modelo no tiene definido el método __str__().",
+        "Ninguna respuesta es correcta.",
+        "El servidor debe reiniciarse nuevamente utilizando python manage.py runserver."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "728483e659e9e2d7a834adb5b51fa8dcac5bb0966f95bc686448349fcdfaee0e",
+      "image_path": "data/preguntas_img/pregunta_728483e659e9e2d7a834adb5b51fa8dcac5bb0966f95bc686448349fcdfaee0e.png",
+      "text_snippet": "¿Cuál es la función principal de un método constructor dentro de una clase?",
+      "options": [
+        "Consultar información del objeto sin alterar su estado interno.",
+        "Inicializar el objeto asignando valores iniciales a sus atributos al momento de su creación.",
+        "Ninguna respuesta es correcta.",
+        "Modificar los valores de los atributos del objeto durante su ejecución."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "7b75fbbedda045a9636f6475c224f730fd17d35c5848fae04190954e912fc2c5",
+      "image_path": "data/preguntas_img/pregunta_7b75fbbedda045a9636f6475c224f730fd17d35c5848fae04190954e912fc2c5.png",
+      "text_snippet": "Una regla CSS está compuesta por selector, propiedad y valor. ¿Qué función cumple el selector?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Definir el valor visual que tendrá una propiedad específica.",
+        "Especificar la estructura jerárquica del documento HTML.",
+        "Indicar a qué elementos HTML se aplicarán los estilos definidos."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "694f5eb174c0501bdcd1342619210e65904b538e87c88745553fee09ba01fdc7",
+      "image_path": "data/preguntas_img/pregunta_694f5eb174c0501bdcd1342619210e65904b538e87c88745553fee09ba01fdc7.png",
+      "text_snippet": "Observe el siguiente cambio realizado en un modelo:\n\n\n\n\npor:\n\n\n\n\n¿Qué procedimiento debería realizar antes de ejecutar nuevamente la aplicación?",
+      "options": [
+        "No realizar ninguna acción adicional porque únicamente cambió el tipo del campo.",
+        "Ejecutar python manage.py makemigrations y posteriormente python manage.py migrate, porque cambió la estructura del modelo.",
+        "Reiniciar únicamente el servidor con python manage.py runserver, ya que Django detecta automáticamente el nuevo tipo de dato.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "e35041593d58ffb891cfe9e584e9acc69337fae03fde7e9f216c314559cdcdde",
+      "image_path": "data/preguntas_img/pregunta_e35041593d58ffb891cfe9e584e9acc69337fae03fde7e9f216c314559cdcdde.png",
+      "text_snippet": "Un desarrollador desea consultar los registros almacenados en una base de datos utilizando objetos de Python, evitando escribir consultas SQL compleja",
+      "options": [
+        "ORM.",
+        "URL Routing.",
+        "HTML.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "a1b96940145ad3503c78b987808f922cbc6e1f4b76d5d8a5a87f490d3b5e4cb5",
+      "image_path": "data/preguntas_img/pregunta_a1b96940145ad3503c78b987808f922cbc6e1f4b76d5d8a5a87f490d3b5e4cb5.png",
+      "text_snippet": "Un desarrollador debe implementar las siguientes funcionalidades en una aplicación web:\n\n1. Consultar la información de un estudiante.\n2. Registrar un",
+      "options": [
+        "POST, GET, PUT, DELETE.",
+        "GET, PUT, POST, DELETE.",
+        "GET, POST, PUT, DELETE.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ac1496c2d815d9a5b94f74df81b638f52f6e56030e3ac96d89cdf8563b81da83",
+      "image_path": "data/preguntas_img/pregunta_ac1496c2d815d9a5b94f74df81b638f52f6e56030e3ac96d89cdf8563b81da83.png",
+      "text_snippet": "Una vez generados los archivos de migración, el desarrollador necesita aplicar esos cambios en la base de datos. ¿Qué comando debería ejecutar?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "python manage.py migrate",
+        "python manage.py startapp",
+        "python manage.py makemigrations"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "266c68ad0b919f275f625a63d950758ffc1a92e800209abb0edbcfd2de4331d1",
+      "image_path": "data/preguntas_img/pregunta_266c68ad0b919f275f625a63d950758ffc1a92e800209abb0edbcfd2de4331d1.png",
+      "text_snippet": "Analice el código completo de la clase RepoJson. Luego, observe el fragmento que se agrega al final del programa y determine cuál será el resultado qu",
+      "options": [
+        "True",
+        "Mouse",
+        "Ninguna respuesta es correcta.",
+        "Mouse Gamer"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "f5e150a8748cd211ccf01f2ed84fd39df93571f7af46a82237e7166612fb9e17",
+      "image_path": "data/preguntas_img/pregunta_f5e150a8748cd211ccf01f2ed84fd39df93571f7af46a82237e7166612fb9e17.png",
+      "text_snippet": "¿Por qué el formato JSON es ampliamente utilizado para intercambiar información entre aplicaciones desarrolladas en diferentes lenguajes de programaci",
+      "options": [
+        "Porque únicamente puede ser utilizado por aplicaciones desarrolladas en Python.",
+        "Porque reemplaza completamente la necesidad de utilizar bases de datos en las aplicaciones.",
+        "Ninguna respuesta es correcta.",
+        "Porque utiliza un formato de texto estándar que puede ser interpretado por diferentes plataformas y lenguajes."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "b8abb92e6c4482b895d26ffa88465f86e04acd018702fcd883558634f5cc718c",
+      "image_path": "data/preguntas_img/pregunta_b8abb92e6c4482b895d26ffa88465f86e04acd018702fcd883558634f5cc718c.png",
+      "text_snippet": "Si se define una clase Auto con atributos y métodos, ¿qué representa la creación de un Toyota rojo específico?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Una clase derivada de Auto con nuevas características.",
+        "Un método que modifica el comportamiento del Auto.",
+        "Una instancia de la clase Auto con valores particulares."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "e7ddde66c73a14df898e4cedaed0a346ab79b088736fbaae54fa330700153956",
+      "image_path": "data/preguntas_img/pregunta_e7ddde66c73a14df898e4cedaed0a346ab79b088736fbaae54fa330700153956.png",
+      "text_snippet": "Al diseñar una clase \"Celular\" con atributos como marca y modelo, y métodos como llamar o enviar mensaje, ¿qué representan los métodos?",
+      "options": [
+        "Acciones o comportamientos que el objeto puede realizar dentro del sistema.",
+        "Datos que describen el estado interno del objeto en un momento determinado.",
+        "Ninguna respuesta es correcta.",
+        "Valores iniciales que se asignan al objeto al momento de su creación."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "e3889134937f529b45a338acebc2c11682d663067d62e67ad73b8aaf6a1f9217",
+      "image_path": "data/preguntas_img/pregunta_e3889134937f529b45a338acebc2c11682d663067d62e67ad73b8aaf6a1f9217.png",
+      "text_snippet": "Un estudiante abre un proyecto en PyCharm y desea modificar el contenido de \"libro.py\". Sin embargo, el archivo ya fue localizado dentro del proyecto.",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "En el editor de código, porque es el espacio destinado a escribir y modificar las instrucciones del programa.",
+        "En el panel del proyecto, porque allí se modifican directamente los archivos del sistema.",
+        "En la consola de ejecución, porque allí se editan las instrucciones antes de ejecutarlas."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "804ac28176110195a931cd6c06780ea4a4c811c0567d5afbf3dfbfd87a13acab",
+      "image_path": "data/preguntas_img/pregunta_804ac28176110195a931cd6c06780ea4a4c811c0567d5afbf3dfbfd87a13acab.png",
+      "text_snippet": "Un desarrollador desea crear un proyecto Django desde cero y dejarlo listo para comenzar a desarrollar aplicaciones. ¿Cuál de las siguientes secuencia",
+      "options": [
+        "1,2,4,3,5,6",
+        "Ninguna respuesta es correcta.",
+        "1,2,3,4,5,6",
+        "1,3,2,4,5,6"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "8da7cb12347529c52077cb37aec78ff7ebae7dfbc6fbca3f95ae7cd274080bba",
+      "image_path": "data/preguntas_img/pregunta_8da7cb12347529c52077cb37aec78ff7ebae7dfbc6fbca3f95ae7cd274080bba.png",
+      "text_snippet": "En el caso de la biblioteca escolar, el usuario no puede cambiar directamente el estado de un libro. ¿Qué principio se aplica?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Abstracción, porque solo se muestran los datos relevantes del libro.",
+        "Encapsulación, porque restringe la modificación directa de los datos.",
+        "Polimorfismo, porque el comportamiento del libro cambia según el usuario."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "f69c8c16aafafec76c7bc7067bcb305dac24cefea31a9ea98d214024d02afbe5",
+      "image_path": "data/preguntas_img/pregunta_f69c8c16aafafec76c7bc7067bcb305dac24cefea31a9ea98d214024d02afbe5.png",
+      "text_snippet": "Observe el siguiente código:\n\n\n\n\nSi una carrera tiene registrados cincuenta estudiantes, ¿cuántos registros de estudiantes podrán estar asociados a es",
+      "options": [
+        "Únicamente un estudiante, porque ForeignKey representa una relación uno a uno.",
+        "Exactamente cincuenta, porque ForeignKey limita automáticamente la cantidad de registros relacionados.",
+        "Ninguna respuesta es correcta.",
+        "Todos los estudiantes que sean necesarios, ya que ForeignKey representa una relación de uno a muchos."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "f53e79bb0dc06bc6c194bdac28b9e0b905e5954e345d3f3a7d00fb777561b5c2",
+      "image_path": "data/preguntas_img/pregunta_f53e79bb0dc06bc6c194bdac28b9e0b905e5954e345d3f3a7d00fb777561b5c2.png",
+      "text_snippet": "Un desarrollador decide crear una aplicación completamente desde cero sin utilizar ningún framework. ¿Cuál de las siguientes tareas probablemente requ",
+      "options": [
+        "Programar manualmente el diseño visual de las páginas web, ya que el servidor genera automáticamente el resto.",
+        "Programar manualmente la interfaz de usuario, mientras que la gestión de datos se realiza automáticamente.",
+        "Ninguna respuesta es correcta.",
+        "Programar manualmente funcionalidades comunes como autenticación, formularios y conexión con bases de datos."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "59d27e798bb40d977a424d9db050baf6453de74fbedbb8a7819f7bf144d0e8bc",
+      "image_path": "data/preguntas_img/pregunta_59d27e798bb40d977a424d9db050baf6453de74fbedbb8a7819f7bf144d0e8bc.png",
+      "text_snippet": "Un desarrollador debe decidir entre utilizar GET o POST para implementar una funcionalidad en un sistema web. ¿En cuál de las siguientes situaciones s",
+      "options": [
+        "Cuando únicamente se necesita consultar información disponible sin modificar el estado del servidor.",
+        "Cuando se requiere enviar información al servidor para registrar nuevos datos o procesar un formulario.",
+        "Ninguna respuesta es correcta.",
+        "Cuando se desea recuperar un recurso existente utilizando únicamente la dirección URL."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "d26a9290b114f66c1c9fb462f010b643ebffd887037d5acb949ded0108d4c18a",
+      "image_path": "data/preguntas_img/pregunta_d26a9290b114f66c1c9fb462f010b643ebffd887037d5acb949ded0108d4c18a.png",
+      "text_snippet": "En HTML5, ¿qué define un elemento completo?",
+      "options": [
+        "Una etiqueta de apertura acompañada únicamente de atributos obligatorios.",
+        "Un conjunto de etiquetas sin contenido ni estructura definida.",
+        "Ninguna respuesta es correcta.",
+        "Una etiqueta de apertura, atributos opcionales, contenido y una etiqueta de cierre."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "1ade1d81f1f34b415ad41d4c679aa4e17163ddee9f53b6f104d0dae3901d64e1",
+      "image_path": "data/preguntas_img/pregunta_1ade1d81f1f34b415ad41d4c679aa4e17163ddee9f53b6f104d0dae3901d64e1.png",
+      "text_snippet": "En el proceso de creación de un objeto, ¿qué sucede si no se define un constructor?",
+      "options": [
+        "El objeto no podrá ejecutar métodos durante su ciclo de vida.",
+        "Ninguna respuesta es correcta.",
+        "El objeto puede no tener un estado inicial definido correctamente.",
+        "El objeto perderá la capacidad de almacenar atributos."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "27165c44f0de464b0760ed371a72d3ac24aa89041543a6178d4c0c0fb24dde52",
+      "image_path": "data/preguntas_img/pregunta_27165c44f0de464b0760ed371a72d3ac24aa89041543a6178d4c0c0fb24dde52.png",
+      "text_snippet": "Analice el código completo de la clase RepoJson. Luego, observe el fragmento que se agrega al final del programa y determine cuál será el resultado qu",
+      "options": [
+        "Carlos",
+        "Ninguna respuesta es correcta.",
+        "0912345678",
+        "None"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "98600290d2e4626ec23d1bc5c35518cf105488d6553b2f5d0082bb3cd005429b",
+      "image_path": "data/preguntas_img/pregunta_98600290d2e4626ec23d1bc5c35518cf105488d6553b2f5d0082bb3cd005429b.png",
+      "text_snippet": "Un estudiante creó correctamente un archivo llamado \"usuario.py\", pero al intentar localizarlo para continuar editándolo no lo encuentra en la ventana",
+      "options": [
+        "En el panel del proyecto, ya que permite explorar la estructura de carpetas y archivos del proyecto.",
+        "En la consola o terminal, ya que allí se listan los archivos disponibles del proyecto una vez ejecutado el programa.",
+        "Ninguna respuesta es correcta.",
+        "En el editor central, ya que allí se muestran automáticamente todos los archivos creados dentro del proyecto."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "7cb3d598818ae1de35be784380941db35995a85166cc1c5f4f03db6d1d0660f9",
+      "image_path": "data/preguntas_img/pregunta_7cb3d598818ae1de35be784380941db35995a85166cc1c5f4f03db6d1d0660f9.png",
+      "text_snippet": "En Python, el módulo json permite convertir información entre objetos de Python y cadenas en formato JSON. ¿Cuál de las siguientes situaciones represe",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Un diccionario de Python se convierte en una cadena con formato JSON para ser almacenada nuevamente como un objeto de Python.",
+        "Una cadena con formato JSON se convierte en un diccionario de Python para ser enviada a un servidor.",
+        "Un diccionario de Python se convierte en una cadena con formato JSON para ser enviada a un servidor."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "9d2350fa7b8ebc1758b4f4047545462fccd0f66dd88099bd58f462e194a87057",
+      "image_path": "data/preguntas_img/pregunta_9d2350fa7b8ebc1758b4f4047545462fccd0f66dd88099bd58f462e194a87057.png",
+      "text_snippet": "Un desarrollador inicia un proyecto completamente nuevo utilizando Django y necesita crear la estructura principal del sitio web antes de comenzar a p",
+      "options": [
+        "django-admin startproject",
+        "python manage.py migrate",
+        "python manage.py startapp",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "aa9e31238668f450d431501cef1753331d826c50c3311d1c9c27535f74dca095",
+      "image_path": "data/preguntas_img/pregunta_aa9e31238668f450d431501cef1753331d826c50c3311d1c9c27535f74dca095.png",
+      "text_snippet": "En una clase, los atributos permiten describir el estado de un objeto. ¿Cuál es la interpretación más adecuada?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Son propiedades que almacenan información específica del objeto en un momento determinado.",
+        "Son funciones que determinan el comportamiento del objeto durante su ejecución.",
+        "Son estructuras que permiten dividir el programa en módulos independientes."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "eb68424469a0dba9bef35d2ec5caf3ba9b0ce6bf843a50749d4e70ec767b4b87",
+      "image_path": "data/preguntas_img/pregunta_eb68424469a0dba9bef35d2ec5caf3ba9b0ce6bf843a50749d4e70ec767b4b87.png",
+      "text_snippet": "Al modelar un sistema de biblioteca, se define una clase Libro con atributos como título y autor. ¿Qué representa un objeto en este contexto?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Un conjunto de métodos que permiten manipular datos relacionados con los libros.",
+        "Una definición general de todos los libros posibles dentro del sistema sin valores específicos.",
+        "Una instancia concreta de la clase Libro con valores específicos asignados a sus atributos."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "90160bae4a468ce70c1cd5c650f062fc498cea1f3ebda7e013518805542dbcfb",
+      "image_path": "data/preguntas_img/pregunta_90160bae4a468ce70c1cd5c650f062fc498cea1f3ebda7e013518805542dbcfb.png",
+      "text_snippet": "Una aplicación web permite eliminar permanentemente un registro de clientes de la base de datos. ¿Qué método HTTP representa la opción más adecuada pa",
+      "options": [
+        "POST, porque crea una solicitud de eliminación sin modificar el recurso existente.",
+        "DELETE, porque está diseñado para eliminar recursos existentes del servidor.",
+        "Ninguna respuesta es correcta.",
+        "PUT, porque reemplaza el recurso por un registro vacío antes de eliminarlo."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "53e9b746916ec800f2e954a6e262653795747ea984b7352e90e321e28da1b29f",
+      "image_path": "data/preguntas_img/pregunta_53e9b746916ec800f2e954a6e262653795747ea984b7352e90e321e28da1b29f.png",
+      "text_snippet": "Observe el siguiente modelo:\n\n\n\n\nPosteriormente el desarrollador agrega el siguiente campo:\n\n\n\n\n¿Qué procedimiento debería realizar antes de ejecutar ",
+      "options": [
+        "Ejecutar primero python manage.py migrate y posteriormente python manage.py makemigrations, ya que la estructura de la base de datos fue modificada.",
+        "Ninguna respuesta es correcta.",
+        "Ejecutar únicamente python manage.py runserver, ya que Django actualiza automáticamente la base de datos.",
+        "Reiniciar el servidor con python manage.py runserver, porque los nuevos campos se crean automáticamente."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "922e65a4b6d3ebec364df707a4b47c67a1a04420ff206eb431a9eeab4ae11531",
+      "image_path": "data/preguntas_img/pregunta_922e65a4b6d3ebec364df707a4b47c67a1a04420ff206eb431a9eeab4ae11531.png",
+      "text_snippet": "En un documento HTML, ¿qué representa la etiqueta <body>?",
+      "options": [
+        "El contenido visible que será mostrado en el navegador al usuario.",
+        "Ninguna respuesta es correcta.",
+        "El contenedor exclusivo de metadatos del sistema.",
+        "La sección donde se definen los estilos visuales del documento."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "8f496789a66693b24d92f7b6d8783a11b66c56149e5634920fbf52631394fe83",
+      "image_path": "data/preguntas_img/pregunta_8f496789a66693b24d92f7b6d8783a11b66c56149e5634920fbf52631394fe83.png",
+      "text_snippet": "Durante una práctica de laboratorio, el docente solicita identificar cuál de varios bloques condicionales es ejecutado por un programa sin modificar e",
+      "options": [
+        "Colocar un breakpoint únicamente al finalizar el programa y ejecutar el programa en modo depuración para identificar el bloque ejecutado.",
+        "Colocar breakpoints en los bloques condicionales y ejecutar el programa normalmente para observar dónde se detiene la ejecución.",
+        "Ninguna respuesta es correcta.",
+        "Colocar breakpoints en los bloques condicionales y ejecutar el programa en modo depuración para observar dónde se detiene la ejecución."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "855139b4de29264fe470464f63fa27d6f6ded5fc88bea1c03222bb5bb8595ed3",
+      "image_path": "data/preguntas_img/pregunta_855139b4de29264fe470464f63fa27d6f6ded5fc88bea1c03222bb5bb8595ed3.png",
+      "text_snippet": "Una aplicación recibe información desde un servicio web en formato JSON y necesita manipular esos datos como un diccionario de Python. ¿Qué proceso de",
+      "options": [
+        "Convertir directamente la cadena JSON en una lista sin realizar ninguna transformación.",
+        "Aplicar un proceso de serialización para convertir el objeto de Python en una cadena JSON.",
+        "Aplicar un proceso de deserialización para convertir la cadena JSON en un objeto de Python.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bcb2db10bab955d508f5ab83729c30bd2ac71d414d21a0bdd432656cec25119f",
+      "image_path": "data/preguntas_img/pregunta_bcb2db10bab955d508f5ab83729c30bd2ac71d414d21a0bdd432656cec25119f.png",
+      "text_snippet": "Un programador utiliza una librería para realizar operaciones matemáticas cuando lo necesita. En otro proyecto utiliza un framework web que controla e",
+      "options": [
+        "En la librería el desarrollador decide cuándo utilizar sus funciones; en el framework es el framework quien controla el flujo de ejecución.",
+        "Tanto la librería como el framework controlan automáticamente el flujo de ejecución del programa.",
+        "Ninguna respuesta es correcta.",
+        "En la librería el framework controla cuándo utilizar las funciones; en el framework el desarrollador controla completamente el flujo de ejecución."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "d340ad1f5022bb3dc5a904f816fb0deed1f8e081fbc024eee685741c6a1b3d4d",
+      "image_path": "data/preguntas_img/pregunta_d340ad1f5022bb3dc5a904f816fb0deed1f8e081fbc024eee685741c6a1b3d4d.png",
+      "text_snippet": "Observe el siguiente código:\n\n\n\n\n¿Qué efecto produce el parámetro null=True?",
+      "options": [
+        "Permite dejar el campo vacío únicamente en los formularios.",
+        "Permite almacenar valores NULL en la base de datos para ese campo.",
+        "Permite convertir automáticamente una cadena vacía en un valor obligatorio.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "2549a0b97a0f57dcca649667e36e83028ca206f1c8b9193754da64337f1416a2",
+      "image_path": "data/preguntas_img/pregunta_2549a0b97a0f57dcca649667e36e83028ca206f1c8b9193754da64337f1416a2.png",
+      "text_snippet": "Un desarrollador necesita enviar información de una aplicación escrita en Python hacia un servicio web que únicamente acepta datos en formato JSON. ¿Q",
+      "options": [
+        "Convertir el objeto de Python en un archivo ejecutable antes de enviarlo al servicio web.",
+        "Convertir el objeto de Python a una cadena en formato JSON mediante un proceso de serialización.",
+        "Ninguna respuesta es correcta.",
+        "Convertir la cadena JSON en un objeto de Python mediante un proceso de deserialización."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "3008f8935ec429e3570faa628155d56db44887fd985d95bbdd756d4936bc2d8c",
+      "image_path": "data/preguntas_img/pregunta_3008f8935ec429e3570faa628155d56db44887fd985d95bbdd756d4936bc2d8c.png",
+      "text_snippet": "En un sistema académico se desea representar estudiantes, docentes y asignaturas. Cada uno posee características propias y realiza acciones específica",
+      "options": [
+        "Modelar estudiantes, docentes y asignaturas como clases independientes con atributos y métodos propios, estableciendo relaciones entre ellas según su interacción.",
+        "Modelar estudiantes, docentes y asignaturas como clases independientes con atributos y métodos propios, sin establecer relaciones entre ellas porque cada una funciona de forma autónoma.",
+        "Modelar estudiantes, docentes y asignaturas como clases independientes con atributos similares y métodos compartidos, evitando definir comportamientos específicos para cada entidad.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "9c90b8d73ba44a211a8b9cd7e2eea1fcd055b13bc89882e0f61865bf88c23e77",
+      "image_path": "data/preguntas_img/pregunta_9c90b8d73ba44a211a8b9cd7e2eea1fcd055b13bc89882e0f61865bf88c23e77.png",
+      "text_snippet": "Un estudiante desea aprovechar las ayudas que ofrece PyCharm para reducir errores mientras escribe código en Python. ¿Cuál de las siguientes funciones",
+      "options": [
+        "La ejecución paso a paso del depurador.",
+        "El autocompletado inteligente del explorador.",
+        "La estructura de carpetas del proyecto.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ac13efcdb9aeb00ecc4c3538f67ee43a5318cb9c4d9cd5e2a0ad1602b85b42c0",
+      "image_path": "data/preguntas_img/pregunta_ac13efcdb9aeb00ecc4c3538f67ee43a5318cb9c4d9cd5e2a0ad1602b85b42c0.png",
+      "text_snippet": "Después de crear un proyecto con Django, un desarrollador desea comprobar que el proyecto funciona correctamente ejecutando el servidor de desarrollo ",
+      "options": [
+        "python manage.py migrate",
+        "python manage.py runserver",
+        "python manage.py createsuperuser",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "fbaa74c988f8a931fd613886a282777041491ed5e04499d11da58c7239908f29",
+      "image_path": "data/preguntas_img/pregunta_fbaa74c988f8a931fd613886a282777041491ed5e04499d11da58c7239908f29.png",
+      "text_snippet": "En un sistema académico cada estudiante pertenece únicamente a una carrera, mientras que una carrera puede tener cientos de estudiantes. ¿Qué tipo de ",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Uno a uno.",
+        "Muchos a muchos.",
+        "Uno a muchos."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "8aa6a77d7e87996f0625be274d8a7f5c2c8b7b01258d61b5693bf64aa067afce",
+      "image_path": "data/preguntas_img/pregunta_8aa6a77d7e87996f0625be274d8a7f5c2c8b7b01258d61b5693bf64aa067afce.png",
+      "text_snippet": "En HTML5, ¿cuál es la función principal de un formulario (<form>)?",
+      "options": [
+        "Permitir la entrada de datos del usuario para ser enviados al sistema.",
+        "Definir la estructura visual del contenido en la página web.",
+        "Aplicar estilos de presentación a los elementos interactivos.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "942dc23a9c8dfce9036c48e08e770d345763540890b1dd2976a519f5cc5d8fa9",
+      "image_path": "data/preguntas_img/pregunta_942dc23a9c8dfce9036c48e08e770d345763540890b1dd2976a519f5cc5d8fa9.png",
+      "text_snippet": "En un sistema bancario, un método que permite cambiar el saldo de una cuenta corresponde a:",
+      "options": [
+        "Un método consultor, porque muestra información sin modificarla.",
+        "Un método modificador, porque altera directamente el valor de un atributo.",
+        "Un método constructor, porque define el estado inicial del objeto.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "5a4572246dd9f9fb81f87a4dc286f6323d53560f04288844e8ba2eee4ff91abf",
+      "image_path": "data/preguntas_img/pregunta_5a4572246dd9f9fb81f87a4dc286f6323d53560f04288844e8ba2eee4ff91abf.png",
+      "text_snippet": "Un navegador solicita la página principal de un sistema web. Una vez que el servidor procesa correctamente la petición, ¿qué información debe devolver",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Una nueva solicitud HTTP para confirmar que el navegador desea recibir la información.",
+        "Una nueva conexión HTTP para que el navegador vuelva a solicitar el mismo recurso.",
+        "Una respuesta HTTP con el contenido solicitado y la información correspondiente al resultado de la petición."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "c6567bf9733374fce3a12ff647af62f8bc846f492a7e9bbb277e5020f35631a8",
+      "image_path": "data/preguntas_img/pregunta_c6567bf9733374fce3a12ff647af62f8bc846f492a7e9bbb277e5020f35631a8.png",
+      "text_snippet": "Durante un proceso de serialización utilizando json.dumps(), ¿qué tipo de información constituye el origen del proceso?",
+      "options": [
+        "Una cadena en formato JSON almacenada en la memoria de Python.",
+        "Un diccionario u objeto almacenado en la memoria de Python.",
+        "Ninguna respuesta es correcta.",
+        "Un archivo JSON cargado previamente en la memoria de Python."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "4554319f7d6dc3d4349c131890243a243f880d9fe24f874dd43998e34e6e8628",
+      "image_path": "data/preguntas_img/pregunta_4554319f7d6dc3d4349c131890243a243f880d9fe24f874dd43998e34e6e8628.png",
+      "text_snippet": "¿Cuál es la función principal de la etiqueta <head> en un documento HTML?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Definir la estructura semántica de las secciones visibles del documento.",
+        "Mostrar el contenido principal visible para el usuario final.",
+        "Contener metadatos e información que no se muestra directamente en la página."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "60430ac5647e10196c1425339065b6b366d5cf5af1cfda743d68cbf2fa563369",
+      "image_path": "data/preguntas_img/pregunta_60430ac5647e10196c1425339065b6b366d5cf5af1cfda743d68cbf2fa563369.png",
+      "text_snippet": "En una aplicación web, un usuario hace clic sobre el botón \"Consultar calificaciones\". ¿Cuál de las siguientes secuencias representa correctamente el ",
+      "options": [
+        "2,1,3,4,5,6",
+        "Ninguna respuesta es correcta.",
+        "1,2,3,4,6,5",
+        "1,2,4,3,5,6"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "6a135f9dbd269df90f8f711a7ddb310bfa629d376b5be38bd14b1f9f296db915",
+      "image_path": "data/preguntas_img/pregunta_6a135f9dbd269df90f8f711a7ddb310bfa629d376b5be38bd14b1f9f296db915.png",
+      "text_snippet": "Durante la depuración de un programa, un estudiante necesita observar el contenido de la variable \"contador\" sin modificar el código fuente ni agregar",
+      "options": [
+        "Ejecutar el programa en modo depuración y revisar el panel del proyecto.",
+        "Ejecutar el programa normalmente y revisar el editor de código.",
+        "Ninguna respuesta es correcta.",
+        "Ejecutar el programa en modo depuración y observar la variable desde el depurador."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "15260afc110311cc1aa13b955c69babc4bef632f2996ff66c714d7b974199c72",
+      "image_path": "data/preguntas_img/pregunta_15260afc110311cc1aa13b955c69babc4bef632f2996ff66c714d7b974199c72.png",
+      "text_snippet": "En un sistema, el estado de un objeto solo puede ser modificado mediante métodos definidos en la clase. ¿Qué principio se está aplicando?",
+      "options": [
+        "Abstracción, porque elimina detalles innecesarios del objeto.",
+        "Herencia, porque permite reutilizar código entre clases.",
+        "Ninguna respuesta es correcta.",
+        "Encapsulación, porque controla el acceso a los datos internos."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "7e104529c76293157a7b2a57880cf7d351c62cec08d6ba41f151b74711df4bea",
+      "image_path": "data/preguntas_img/pregunta_7e104529c76293157a7b2a57880cf7d351c62cec08d6ba41f151b74711df4bea.png",
+      "text_snippet": "Después de configurar correctamente el proyecto Django, el desarrollador necesita crear un usuario con privilegios administrativos para acceder al pan",
+      "options": [
+        "python manage.py migrate",
+        "python manage.py createsuperuser",
+        "python manage.py runserver",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "ba32caede0cde19b61a59ae6bcc6062e530a9e79f5be6345fa0e5835fe7653f9",
+      "image_path": "data/preguntas_img/pregunta_ba32caede0cde19b61a59ae6bcc6062e530a9e79f5be6345fa0e5835fe7653f9.png",
+      "text_snippet": "Observe el siguiente código:\n\n\n\n\n¿Cuál es el efecto de utilizar el parámetro unique=False en el campo cedula?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Garantiza que el campo no sea obligatorio, pero permite almacenar valores repetidos en la base de datos.",
+        "Garantiza que no puedan existir dos registros con el mismo valor en ese campo dentro de la base de datos.",
+        "Garantiza que el campo siempre tenga un valor diferente únicamente durante la validación del formulario."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "8a46610c4b614319ba0c44e574b1804d069f7a7aa17fee1a1271d1dcbcf4336a",
+      "image_path": "data/preguntas_img/pregunta_8a46610c4b614319ba0c44e574b1804d069f7a7aa17fee1a1271d1dcbcf4336a.png",
+      "text_snippet": "En una aplicación desarrollada con Django, después de que el modelo obtiene la información solicitada, otro componente se encarga de decidir cómo most",
+      "options": [
+        "El Template.",
+        "La Vista.",
+        "El Modelo.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "c35188f390c0431e7330a0b4a8413eeeb3b9717f3992dc7c30e1373c3a665b7b",
+      "image_path": "data/preguntas_img/pregunta_c35188f390c0431e7330a0b4a8413eeeb3b9717f3992dc7c30e1373c3a665b7b.png",
+      "text_snippet": "¿Por qué se considera que una clase es un \"molde\" en la Programación Orientada a Objetos?",
+      "options": [
+        "Porque define las características y comportamientos que tendrán los objetos creados a partir de ella.",
+        "Porque permite ejecutar directamente las acciones sin necesidad de crear objetos.",
+        "Ninguna respuesta es correcta.",
+        "Porque representa una instancia específica con valores definidos en tiempo de ejecución."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "13c7d672173329f1b36fd9b6947fc36308c95903390f32d8f36e63ef084147c1",
+      "image_path": "data/preguntas_img/pregunta_13c7d672173329f1b36fd9b6947fc36308c95903390f32d8f36e63ef084147c1.png",
+      "text_snippet": "Un estudiante puede matricularse en varias asignaturas y una asignatura puede ser cursada por muchos estudiantes. ¿Qué tipo de relación representa est",
+      "options": [
+        "Muchos a muchos.",
+        "Uno a uno.",
+        "Ninguna respuesta es correcta.",
+        "Uno a muchos."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "36a2109af8e424a99b880aa74c7800ffcbbc27bbdb7fd1f84bee4409cbbad5a2",
+      "image_path": "data/preguntas_img/pregunta_36a2109af8e424a99b880aa74c7800ffcbbc27bbdb7fd1f84bee4409cbbad5a2.png",
+      "text_snippet": "Observe el siguiente código:\n\n\n\n\n¿Cuál es el propósito del método __str__()?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Validar el contenido del campo nombre antes de guardarlo.",
+        "Guardar el texto que representará al objeto cuando sea mostrado por Django.",
+        "Definir el texto que representará al objeto cuando sea mostrado por Django."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "fd717fcefbd3f9dd86f6170a514b52772010437d3b4bbf58edf761787a037cb1",
+      "image_path": "data/preguntas_img/pregunta_fd717fcefbd3f9dd86f6170a514b52772010437d3b4bbf58edf761787a037cb1.png",
+      "text_snippet": "En CSS, ¿qué diferencia existe entre un selector de clase y uno de id?",
+      "options": [
+        "Ambos selectores tienen exactamente el mismo comportamiento en todos los casos.",
+        "El selector de clase es único y el id puede aplicarse a múltiples elementos.",
+        "El selector de clase puede aplicarse a varios elementos, mientras que el id es único.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "e3027725b53fdc24b02c54bba1dd323b0f9c64aa07c7c447d8a9a99057dccbdf",
+      "image_path": "data/preguntas_img/pregunta_e3027725b53fdc24b02c54bba1dd323b0f9c64aa07c7c447d8a9a99057dccbdf.png",
+      "text_snippet": "En un sistema de zoológico, se define la clase Animal y luego clases como León y Ave con comportamientos distintos. ¿Qué combinación de principios se ",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Abstracción y herencia, porque se eliminan detalles y se reutilizan atributos.",
+        "Herencia y polimorfismo, porque comparten características y tienen comportamientos diferentes.",
+        "Encapsulación y abstracción, porque se protegen datos y se ocultan detalles."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "9a8d96e9bd58d99f34b6d1311814589af399ff5415e922085b1a73ee6927e9de",
+      "image_path": "data/preguntas_img/pregunta_9a8d96e9bd58d99f34b6d1311814589af399ff5415e922085b1a73ee6927e9de.png",
+      "text_snippet": "Al finalizar el desarrollo de un proyecto, un estudiante desea compartir únicamente el código fuente con un compañero, quien creará su propio entorno ",
+      "options": [
+        "El directorio \".idea\", ya que contiene toda la lógica del programa.",
+        "Los archivos \".py\" que contienen la implementación del sistema.",
+        "El directorio \"venv\", ya que contiene el código fuente del proyecto.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "9c6ba72f8aa68b8094ae56d8a0386d535976dd35d7f3f3af204ad72d15a92290",
+      "image_path": "data/preguntas_img/pregunta_9c6ba72f8aa68b8094ae56d8a0386d535976dd35d7f3f3af204ad72d15a92290.png",
+      "text_snippet": "En un sistema orientado a objetos, ¿por qué es importante separar atributos y métodos dentro de una clase?",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Porque permite ejecutar los atributos como funciones dentro del sistema.",
+        "Porque evita la necesidad de crear instancias de la clase.",
+        "Porque permite diferenciar entre el estado del objeto y las acciones que puede realizar."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "3ddbcccf12733449b48f91bb2d9e54c999fc01984c09979af1865a0b40a01ae2",
+      "image_path": "data/preguntas_img/pregunta_3ddbcccf12733449b48f91bb2d9e54c999fc01984c09979af1865a0b40a01ae2.png",
+      "text_snippet": "Una tienda virtual recibe la solicitud de un cliente para consultar el catálogo de productos. ¿Cuál es la responsabilidad principal del servidor duran",
+      "options": [
+        "Mostrar directamente el catálogo al usuario antes de procesar la solicitud.",
+        "Ninguna respuesta es correcta.",
+        "Procesar la solicitud, obtener la información requerida y enviar una respuesta al cliente.",
+        "Esperar que el navegador genere la respuesta y posteriormente almacenarla en la base de datos."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "9a0536cfd84c243e6bcac65fb4214bfe1e7a7afc6e5338b194aea3e4655d7bfc",
+      "image_path": "data/preguntas_img/pregunta_9a0536cfd84c243e6bcac65fb4214bfe1e7a7afc6e5338b194aea3e4655d7bfc.png",
+      "text_snippet": "Cuando un usuario ingresa una dirección web en el navegador, ¿qué ocurre primero en el proceso?",
+      "options": [
+        "El navegador renderiza directamente la página sin necesidad de comunicarse con el servidor.",
+        "Ninguna respuesta es correcta.",
+        "El servidor solicita información al navegador antes de procesar cualquier petición.",
+        "Se envía una solicitud HTTP al servidor correspondiente para obtener los recursos."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "a32e5401302cf8a05715238b1e15454f637c7571cd12f61d86c02bb2cabdbdc3",
+      "image_path": "data/preguntas_img/pregunta_a32e5401302cf8a05715238b1e15454f637c7571cd12f61d86c02bb2cabdbdc3.png",
+      "text_snippet": "Un estudiante desea comenzar un nuevo sistema en PyCharm y mantener separados los archivos del código, las librerías instaladas y la configuración del",
+      "options": [
+        "Crear una carpeta del proyecto que contenga los archivos \".py\", el directorio \"venv\" y los archivos de configuración del sistema operativo.",
+        "Crear una carpeta del proyecto que contenga los archivos \".py\", el directorio \"venv\" y únicamente el archivo \"main.py\".",
+        "Ninguna respuesta es correcta.",
+        "Crear una carpeta del proyecto que contenga los archivos \".py\", el directorio \"venv\" y los archivos de configuración del IDE."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "f2419f9fafe98fed5e93e4aaa5d19c8328573d42d5703cc8996d678156cdf095",
+      "image_path": "data/preguntas_img/pregunta_f2419f9fafe98fed5e93e4aaa5d19c8328573d42d5703cc8996d678156cdf095.png",
+      "text_snippet": "Una aplicación necesita almacenar permanentemente información de usuarios, pedidos y facturas, incluso después de apagar el servidor. ¿Qué componente ",
+      "options": [
+        "El navegador del usuario.",
+        "Una base de datos.",
+        "La memoria RAM del servidor.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "f2249975af7a8debe5742f4c4003486dd0d1f3bf38c9b14aaeba8360dacf73c0",
+      "image_path": "data/preguntas_img/pregunta_f2249975af7a8debe5742f4c4003486dd0d1f3bf38c9b14aaeba8360dacf73c0.png",
+      "text_snippet": "Observe el siguiente código:\n\n\n\n\n¿Qué representa el campo carrera?",
+      "options": [
+        "Una relación donde un estudiante puede pertenecer simultáneamente a varias carreras.",
+        "Ninguna respuesta es correcta.",
+        "Una relación donde cada carrera puede pertenecer únicamente a un estudiante.",
+        "Una relación donde varios estudiantes pueden pertenecer a una misma carrera."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "22cefba8decfe1db659a82545046a1556a993d05723f3dcfb2812059b216c657",
+      "image_path": "data/preguntas_img/pregunta_22cefba8decfe1db659a82545046a1556a993d05723f3dcfb2812059b216c657.png",
+      "text_snippet": "Al diseñar un sistema, se decide representar únicamente las características esenciales de un objeto, ignorando detalles irrelevantes. ¿Qué principio s",
+      "options": [
+        "Encapsulación, porque se restringe el acceso a los atributos.",
+        "Ninguna respuesta es correcta.",
+        "Abstracción, porque se enfoca en lo importante del objeto.",
+        "Polimorfismo, porque se permite que un método tenga múltiples formas."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "bbc8ab5b238e77b16353cc717d997266e2e99b430e1087e5303218ec4000aacd",
+      "image_path": "data/preguntas_img/pregunta_bbc8ab5b238e77b16353cc717d997266e2e99b430e1087e5303218ec4000aacd.png",
+      "text_snippet": "En el contexto de la Programación Orientada a Objetos, se desea modelar un sistema a partir de situaciones de la vida real. ¿Cuál es la relación corre",
+      "options": [
+        "La clase y el objeto representan lo mismo, ya que ambos contienen datos y métodos sin diferencia conceptual.",
+        "La clase representa una instancia concreta, mientras que el objeto define las características generales del sistema.",
+        "La clase define las características y comportamientos, mientras que el objeto es la instancia concreta de esa definición.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "ba9476606e67b08eeac3186b54769c8c1d686d6f4c44baf8a851562d2d070459",
+      "image_path": "data/preguntas_img/pregunta_ba9476606e67b08eeac3186b54769c8c1d686d6f4c44baf8a851562d2d070459.png",
+      "text_snippet": "Un desarrollador necesita consultar la información pública de un producto sin modificar ningún dato almacenado en el servidor. ¿Cuál es el método HTTP",
+      "options": [
+        "PUT, porque reemplaza el contenido del recurso consultado antes de devolver la información.",
+        "POST, porque permite consultar información enviando los datos en el cuerpo de la solicitud.",
+        "Ninguna respuesta es correcta.",
+        "GET, porque está diseñado para solicitar información sin modificar los recursos existentes."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "28288c0807ce24233fd84b1dc9da40425dcc9b36d7c4f52ea5fc95d561e03994",
+      "image_path": "data/preguntas_img/pregunta_28288c0807ce24233fd84b1dc9da40425dcc9b36d7c4f52ea5fc95d561e03994.png",
+      "text_snippet": "Se tiene una función \"comunicarse()\" que actúa de forma diferente dependiendo del objeto que la invoque (persona, perro o ave). ¿Qué principio se evid",
+      "options": [
+        "Polimorfismo, porque un mismo método tiene comportamientos distintos.",
+        "Encapsulación, porque los datos están protegidos dentro del objeto.",
+        "Ninguna respuesta es correcta.",
+        "Herencia, porque todas las clases comparten un mismo comportamiento base."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "a19d50ba03d422ed039f69ecae33db475789d7e531e854654e1c373b3789d45d",
+      "image_path": "data/preguntas_img/pregunta_a19d50ba03d422ed039f69ecae33db475789d7e531e854654e1c373b3789d45d.png",
+      "text_snippet": "Analice el código completo de la clase RepoJson. Luego, observe el fragmento que se agrega al final del programa y determine cuál será el resultado qu",
+      "options": [
+        "True",
+        "Ninguna respuesta es correcta.",
+        "Mouse Gamer",
+        "False"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "26cdc74fede223e529527b255f1e36c00a8191ef12a5280ddb8bce92de2036ae",
+      "image_path": "data/preguntas_img/pregunta_26cdc74fede223e529527b255f1e36c00a8191ef12a5280ddb8bce92de2036ae.png",
+      "text_snippet": "En un sistema académico, un estudiante puede inscribirse o darse de baja de materias. Estas acciones corresponden a:",
+      "options": [
+        "Clases, porque definen la estructura general del sistema.",
+        "Métodos, porque representan comportamientos asociados al objeto estudiante.",
+        "Atributos, porque almacenan información relacionada con el estudiante.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "1eac709650cdb6d7bd0692d8d28fe28d80aa64c72b64da2dce63ec99a665d547",
+      "image_path": "data/preguntas_img/pregunta_1eac709650cdb6d7bd0692d8d28fe28d80aa64c72b64da2dce63ec99a665d547.png",
+      "text_snippet": "Un desarrollador está diseñando una API REST para administrar cursos universitarios. Después de analizar las operaciones que realizará el sistema, ide",
+      "options": [
+        "POST para modificar el curso y PUT para eliminarlo.",
+        "PUT para modificar el curso y DELETE para eliminarlo.",
+        "Ninguna respuesta es correcta.",
+        "GET para modificar el curso y POST para eliminarlo."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "6f54506d701e1d170db7da8e1b8c2685989f5df4c467fa44c26b4b11c59db713",
+      "image_path": "data/preguntas_img/pregunta_6f54506d701e1d170db7da8e1b8c2685989f5df4c467fa44c26b4b11c59db713.png",
+      "text_snippet": "En una aplicación desarrollada con Django, un componente consulta la base de datos y contiene la lógica relacionada con la información almacenada. ¿Qu",
+      "options": [
+        "El Modelo.",
+        "El Template.",
+        "La Vista.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "71e2e54b5d31add65487b8de82b19adac5630611cd596b7fe6f72477b43911a5",
+      "image_path": "data/preguntas_img/pregunta_71e2e54b5d31add65487b8de82b19adac5630611cd596b7fe6f72477b43911a5.png",
+      "text_snippet": "En el proceso de carga de una página web, ¿qué papel cumple el navegador?",
+      "options": [
+        "Ejecutar únicamente código CSS sin necesidad de HTML.",
+        "Interpretar los archivos HTML, CSS y otros recursos para mostrar la página al usuario.",
+        "Almacenar permanentemente los datos del servidor sin procesarlos.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "6fa2f4aa15036888c94b4ce7817b7938900f615fec42b8f2174f4b0630a54ef4",
+      "image_path": "data/preguntas_img/pregunta_6fa2f4aa15036888c94b4ce7817b7938900f615fec42b8f2174f4b0630a54ef4.png",
+      "text_snippet": "Un estudiante crea un proyecto llamado \"Biblioteca\" y agrega los archivos \"main.py\", \"libro.py\", \"usuario.py\" y \"prestamo.py\". Posteriormente incorpor",
+      "options": [
+        "Dentro del directorio \"venv\", junto con las librerías del proyecto.",
+        "Dentro de la carpeta principal del proyecto, junto con los demás archivos \".py\".",
+        "Dentro del directorio \".idea\", junto con la configuración del IDE.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "ffadfa340655c29e17ac20da84e649a8be0203f41b441e5a86b2329830ee9bea",
+      "image_path": "data/preguntas_img/pregunta_ffadfa340655c29e17ac20da84e649a8be0203f41b441e5a86b2329830ee9bea.png",
+      "text_snippet": "Observe el siguiente código:\n\n\n\n\n¿Cuál es el efecto de utilizar simultáneamente blank=True y null=True?",
+      "options": [
+        "El campo puede dejarse vacío únicamente en la base de datos, pero será obligatorio en los formularios.",
+        "El campo puede dejarse vacío en formularios y además almacenar valores NULL en la base de datos.",
+        "Ninguna respuesta es correcta.",
+        "El campo puede almacenar NULL, pero únicamente cuando tenga información escrita por el usuario."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "1cbbd0539c1afebb2d2607c574cb8fadb831720fad3b1b3bc04bf2fdc6cf01f5",
+      "image_path": "data/preguntas_img/pregunta_1cbbd0539c1afebb2d2607c574cb8fadb831720fad3b1b3bc04bf2fdc6cf01f5.png",
+      "text_snippet": "Se desea modelar un sistema donde un objeto solo exponga lo necesario para su uso externo. ¿Qué principio de la POO se está aplicando principalmente?",
+      "options": [
+        "Abstracción, porque elimina detalles irrelevantes del sistema.",
+        "Encapsulación, porque protege los datos internos y controla su acceso.",
+        "Ninguna respuesta es correcta.",
+        "Herencia, porque permite reutilizar atributos y métodos de otra clase."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "8f22785ddb40685b581b0285874e4711c3657145858d6f0451262f336b779964",
+      "image_path": "data/preguntas_img/pregunta_8f22785ddb40685b581b0285874e4711c3657145858d6f0451262f336b779964.png",
+      "text_snippet": "Un desarrollador busca un framework escrito en Python que permita crear aplicaciones web dinámicas de manera rápida, segura y escalable, además de inc",
+      "options": [
+        "Diango.",
+        "Ninguna respuesta es correcta.",
+        "Flask con base de datos integrada obligatoria.",
+        "FastAPI con arquitectura MVT incorporada de forma predeterminada."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "fc3aab204adec621c4f93ce3707a507787a28136b8671b6018ad7cfc9b355bc9",
+      "image_path": "data/preguntas_img/pregunta_fc3aab204adec621c4f93ce3707a507787a28136b8671b6018ad7cfc9b355bc9.png",
+      "text_snippet": "Un usuario completa el formulario de registro de una plataforma educativa y presiona el botón \"Crear cuenta\". ¿Qué método HTTP resulta más apropiado p",
+      "options": [
+        "GET, porque permite enviar la información del formulario mediante la URL.",
+        "PUT, porque únicamente reemplaza la información existente del usuario antes de crear la cuenta.",
+        "Ninguna respuesta es correcta.",
+        "POST, porque permite enviar información al servidor para crear un nuevo recurso."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "8ca30faa1c9edda28146a703ece826eb6fc7b1977b8f75dec9428d6ad3731819",
+      "image_path": "data/preguntas_img/pregunta_8ca30faa1c9edda28146a703ece826eb6fc7b1977b8f75dec9428d6ad3731819.png",
+      "text_snippet": "¿Cuál es la función principal de CSS dentro de una página web?",
+      "options": [
+        "Gestionar la comunicación entre el cliente y el servidor.",
+        "Ninguna respuesta es correcta.",
+        "Controlar la apariencia visual y el diseño de los elementos HTML.",
+        "Definir la estructura y el contenido de la página web."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "973f2f90fcb3bb6b67a175fb409e9e7754ec1768852b8061d3ed91a601525cbf",
+      "image_path": "data/preguntas_img/pregunta_973f2f90fcb3bb6b67a175fb409e9e7754ec1768852b8061d3ed91a601525cbf.png",
+      "text_snippet": "Observe el siguiente código:\n\n\n\n\n¿Qué ocurrirá si una carrera es eliminada?",
+      "options": [
+        "Los estudiantes conservarán la referencia aunque la carrera ya no exista.",
+        "Django impedirá eliminar la carrera automáticamente.",
+        "También se eliminarán los estudiantes relacionados con esa carrera.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "b6a07fce2a3ea879ce78fee98e6c7ba114cdd91e96aa85c7273a6a1393964450",
+      "image_path": "data/preguntas_img/pregunta_b6a07fce2a3ea879ce78fee98e6c7ba114cdd91e96aa85c7273a6a1393964450.png",
+      "text_snippet": "Un estudiante solicita visualizar su historial académico desde una aplicación web. Después de que el navegador envía la solicitud al servidor, ¿qué ac",
+      "options": [
+        "El servidor procesa la solicitud antes de generar la respuesta correspondiente.",
+        "El navegador muestra la información solicitada antes de que el servidor procese la petición.",
+        "Ninguna respuesta es correcta.",
+        "El servidor envía la respuesta al navegador antes de procesar la solicitud recibida."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "f0756f0c07190b127a0ba04f0ec0e9a56298e3160b5ad98ee5f681bf05ffff81",
+      "image_path": "data/preguntas_img/pregunta_f0756f0c07190b127a0ba04f0ec0e9a56298e3160b5ad98ee5f681bf05ffff81.png",
+      "text_snippet": "Observe el siguiente código:\n\n\n\n\nSi ya existe un registro con el correo ana@correo.com y un usuario intenta registrar otro con el mismo correo, ¿qué c",
+      "options": [
+        "Django reemplazará automáticamente el registro existente por el nuevo.",
+        "Ninguna respuesta es correcta.",
+        "Django impedirá almacenar el nuevo registro porque el valor debe ser único.",
+        "Django almacenará ambos registros porque EmailField permite valores repetidos."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "184e8cffdcd1cf84e6ea272371dee3301345515d439ffeb204015255e06e1dac",
+      "image_path": "data/preguntas_img/pregunta_184e8cffdcd1cf84e6ea272371dee3301345515d439ffeb204015255e06e1dac.png",
+      "text_snippet": "Un desarrollador crea un nuevo modelo llamado Estudiante. Sin embargo, al consultar la base de datos observa que la tabla aún no existe. ¿Cuál de las ",
+      "options": [
+        "python manage.py startapp → python manage.py migrate",
+        "Ninguna respuesta es correcta.",
+        "python manage.py migrate → python manage.py makemigrations",
+        "python manage.py makemigrations → python manage.py migrate"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "25bf884b24fef870e3e0d4cf7ebde23fa78091a48a59f192bbfe5458f03381ec",
+      "image_path": "data/preguntas_img/pregunta_25bf884b24fef870e3e0d4cf7ebde23fa78091a48a59f192bbfe5458f03381ec.png",
+      "text_snippet": "Durante el desarrollo de una aplicación web, un programador necesita procesar la información enviada por un formulario, validar los datos y consultar ",
+      "options": [
+        "El navegador web.",
+        "El frontend.",
+        "Ninguna respuesta es correcta.",
+        "El backend."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "f8e7633db15cda2673d74195170adab1947af58ffb22a75502c630fe087e3558",
+      "image_path": "data/preguntas_img/pregunta_f8e7633db15cda2673d74195170adab1947af58ffb22a75502c630fe087e3558.png",
+      "text_snippet": "En el paradigma estructurado, un problema se resuelve mediante pasos secuenciales. ¿Cuál es la principal diferencia con la Programación Orientada a Ob",
+      "options": [
+        "La POO organiza la solución en objetos que integran datos y comportamientos relacionados.",
+        "La POO organiza la solución en módulos independientes sin interacción entre ellos.",
+        "Ninguna respuesta es correcta.",
+        "La POO organiza la solución únicamente en funciones reutilizables sin considerar datos."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "b3f82a861551597d868ef4cc269c604e54526df84d483466535f1af64b77db48",
+      "image_path": "data/preguntas_img/pregunta_b3f82a861551597d868ef4cc269c604e54526df84d483466535f1af64b77db48.png",
+      "text_snippet": "¿Cuál de las siguientes afirmaciones describe correctamente la diferencia entre serialización y deserialización?",
+      "options": [
+        "La serialización convierte archivos JSON en bases de datos y la deserialización convierte bases de datos en objetos de Python.",
+        "Ninguna respuesta es correcta.",
+        "La serialización y la deserialización realizan exactamente la misma función, pero utilizan nombres diferentes.",
+        "La serialización convierte objetos de Python en formato JSON, mientras que la deserialización convierte datos JSON nuevamente en objetos de Python."
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "d606eac0c9e596efd5882c6bda35162fd0ed98b5517c6bea52ef0031495b5637",
+      "image_path": "data/preguntas_img/pregunta_d606eac0c9e596efd5882c6bda35162fd0ed98b5517c6bea52ef0031495b5637.png",
+      "text_snippet": "¿Cuál es la diferencia principal entre un método modificador y un consultor?",
+      "options": [
+        "Ambos modifican el estado del objeto pero en diferentes momentos de ejecución.",
+        "El modificador muestra información y el consultor altera el estado del objeto.",
+        "El modificador altera el estado del objeto, mientras que el consultor solo muestra información sin cambiarlo.",
+        "Ninguna respuesta es correcta."
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "7fa44bb25ceaf42665138ac123023f477fda0358f5ae26794ce39ffc19f1f3e9",
+      "image_path": "data/preguntas_img/pregunta_7fa44bb25ceaf42665138ac123023f477fda0358f5ae26794ce39ffc19f1f3e9.png",
+      "text_snippet": "Mientras escribe código en PyCharm, un estudiante observa que el IDE completa automáticamente el nombre de un método antes de terminar de escribirlo. ",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "La inspección de variables del depurador.",
+        "El autocompletado inteligente del explorador.",
+        "El panel del proyecto que organiza los archivos del sistema."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "aab19e69b2d65521b57591358198f752c51fcf5c2746b8af7f12daf396d5586d",
+      "image_path": "data/preguntas_img/pregunta_aab19e69b2d65521b57591358198f752c51fcf5c2746b8af7f12daf396d5586d.png",
+      "text_snippet": "Una empresa decide migrar su aplicación desde MySQL hacia PostgreSQL. Gracias al uso de ORM, gran parte del código permanece sin cambios. ¿Cuál de las",
+      "options": [
+        "La independencia del motor de base de datos.",
+        "La eliminación completa de las bases de datos relacionales.",
+        "Ninguna respuesta es correcta.",
+        "La generación automática de páginas web."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "190c472304ce0978a775d9412c9209c46bed1f2d1e140925689a88d63d781a01",
+      "image_path": "data/preguntas_img/pregunta_190c472304ce0978a775d9412c9209c46bed1f2d1e140925689a88d63d781a01.png",
+      "text_snippet": "Observe el siguiente modelo:\n\n\n\n\nPosteriormente el desarrollador agrega el siguiente método:\n\n\n\n\n¿Qué procedimiento debe realizar respecto a las migra",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "No es necesario ejecutar migraciones, porque únicamente se agregó un método y no cambió la estructura del modelo.",
+        "Es obligatorio ejecutar makemigrations y migrate porque cualquier modificación en la clase requiere actualizar la base de datos.",
+        "Es obligatorio ejecutar únicamente migrate, ya que los métodos modifican automáticamente la estructura de la tabla."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "cfa8524a84a44bffeda4bde16def0dc61cfbc13b4201019a1845039c3e0d6d50",
+      "image_path": "data/preguntas_img/pregunta_cfa8524a84a44bffeda4bde16def0dc61cfbc13b4201019a1845039c3e0d6d50.png",
+      "text_snippet": "En el contexto de la informática moderna, ¿cuál es la función principal de la Web dentro de Internet?",
+      "options": [
+        "Permitir el acceso a documentos enlazados mediante navegadores usando protocolos como HTPP o HTPPS.",
+        "Ninguna respuesta es correcta.",
+        "Gestionar directamente el almacenamiento de datos sin necesidad de servidores.",
+        "Proporcionar la infraestructura física de conexión entre dispositivos a nivel global."
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": "39c443a3589b2f5184f3ad449fe1df0bb88c4790883b3c9f70b138143bbd1417",
+      "text_snippet": "Una asignatura debe tener un docente asignado. El docente existe independientemente de la asignatura.\n\n¿Existe algún error en el código? En caso de no",
+      "image_path": "data/preguntas_img/pregunta_39c443a3589b2f5184f3ad449fe1df0bb88c4790883b3c9f70b138143bbd1417.png",
+      "options": [
+        "Existe error en la línea 17",
+        "self.docente = docente",
+        "docente = [ ]",
+        "self.docente = Docente(nombre, creditos)"
+      ],
+      "correct_idx": 1
+    },
+    {
+      "id": "f645243dcdd1b662ffde4da8d75bf679994b2fe5412e922056075a0f0a3e258c",
+      "text_snippet": "En una relación de agregación, ¿qué sucede si el objeto principal deja de existir?",
+      "image_path": "data/preguntas_img/pregunta_f645243dcdd1b662ffde4da8d75bf679994b2fe5412e922056075a0f0a3e258c.png",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Los objetos cambian su estructura interna sin desaparecer.",
+        "Los objetos relacionados desaparecen automáticamente.",
+        "Los objetos relacionados pueden seguir existiendo de manera independiente."
+      ],
+      "correct_idx": 3
+    },
+    {
+      "id": "778eeeeccea0843eed61f2d22f0438c8548c0134f6850c2e5e623734d663c91e",
+      "text_snippet": "Una empresa de comercio electrónico desea desarrollar un sistema que permita gestionar sus operaciones de venta en línea. Cada cliente tiene datos com",
+      "image_path": "data/preguntas_img/pregunta_778eeeeccea0843eed61f2d22f0438c8548c0134f6850c2e5e623734d663c91e.png",
+      "options": [
+        "5",
+        "Ninguna respuesta es correcta.",
+        "6",
+        "7"
+      ],
+      "correct_idx": 2
+    },
+    {
+      "id": "4bfbd93abd10e12d9223921458d8536ff7cf7e12314bee6a03d7e223b0d27c82",
+      "text_snippet": "¿Cuál es la función principal de la etiqueta <head> en un documento HTML?",
+      "image_path": "data/preguntas_img/pregunta_4bfbd93abd10e12d9223921458d8536ff7cf7e12314bee6a03d7e223b0d27c82.png",
+      "options": [
+        "Ninguna respuesta es correcta.",
+        "Contener metadatos e información que no se muestra directamente en la página.",
+        "Definir la estructura semántica de las secciones visibles del documento.",
+        "Mostrar el contenido principal visible para el usuario final."
+      ],
+      "correct_idx": 1
+    },
+    {
+      "id": "e90de137d1a7ab44b092a9a3a247ce22a226b72804b426ee1da613a0192347ed",
+      "text_snippet": "Una clínica privada desea implementar un sistema informático para mejorar la gestión de pacientes, médicos, consultas, recetas y pagos. Actualmente, l",
+      "image_path": "data/preguntas_img/pregunta_e90de137d1a7ab44b092a9a3a247ce22a226b72804b426ee1da613a0192347ed.png",
+      "options": [
+        "Ninguna respuesta es correcta",
+        "b.",
+        "c.",
+        "d."
+      ],
+      "correct_idx": 1
+    },
+    {
+      "id": "ecf4b8c0e480d531a4663e59ddd5d9d75be79f262ec79bc480c18a4016c0aabf",
+      "text_snippet": "Una receta médica está compuesta por detalles de medicamentos. Cada detalle pertenece a una receta específica.\n\n¿Existe algún error en el código? En c",
+      "image_path": "data/preguntas_img/pregunta_ecf4b8c0e480d531a4663e59ddd5d9d75be79f262ec79bc480c18a4016c0aabf.png",
+      "options": [
+        "self.detalles.append(DetalleMedicamento(medicamento, dosis, dias))",
+        "self.detalles.append(medicamento, dosis, dias)",
+        "DetalleMedicamento.detalles.append(medicamento, dosis, dias)",
+        "Existe error en la línea 14"
+      ],
+      "correct_idx": 0
+    },
+    {
+      "id": "0fcf89f8ce079820c3a619891603881cbf78adc73171009048c814949bccd7c0",
+      "text_snippet": "Mientras escribe código en PyCharm, un estudiante observa que el IDE completa automáticamente el nombre de un método antes de terminar de escribirlo. ",
+      "image_path": "data/preguntas_img/pregunta_0fcf89f8ce079820c3a619891603881cbf78adc73171009048c814949bccd7c0.png",
+      "options": [
+        "A.\n\nNinguna respuesta es correcta.",
+        "B.\n\nEl panel del proyecto que organiza los archivos del sistema.",
+        "C.\n\nEl autocompletado inteligente del explorador.",
+        "D.\n\nLa inspección de variables del depurador."
+      ],
+      "correct_idx": 0
+    },
+    {
+      "id": "d9ab84bfff8ddd1df7ecda18c9d2da0e4e8e0051b698aae608cd31ceefc2f5c9",
+      "text_snippet": "Analice el código completo de la clase RepoJson. Luego, observe el fragmento que se agrega al final del programa y determine cuál será el resultado qu",
+      "image_path": "data/preguntas_img/pregunta_d9ab84bfff8ddd1df7ecda18c9d2da0e4e8e0051b698aae608cd31ceefc2f5c9.png",
+      "options": [
+        "A.\n\n1",
+        "B.\n\nNinguna respuesta es correcta.",
+        "C.\n\nNone",
+        "D.\n\n0"
+      ],
+      "correct_idx": 3
+    },
+    {
+      "id": "91be3260fdc864dcdee6127f895b40731e83c0c178dd4edc0f316cd76585fb57",
+      "text_snippet": "¿Por qué el formato JSON es ampliamente utilizado para intercambiar información entre aplicaciones desarrolladas en diferentes lenguajes de programaci",
+      "image_path": "data/preguntas_img/pregunta_91be3260fdc864dcdee6127f895b40731e83c0c178dd4edc0f316cd76585fb57.png",
+      "options": [
+        "A.\n\nNinguna respuesta es correcta.",
+        "B.\n\nPorque únicamente puede ser utilizado por aplicaciones desarrolladas en Python.",
+        "C.\n\nPorque utiliza un formato de texto estándar que puede ser interpretado por diferentes plataformas y lenguajes.",
+        "D.\n\nPorque reemplaza completamente la necesidad de utilizar bases de datos en las aplicaciones."
+      ],
+      "correct_idx": 2
+    },
+    {
+      "id": "dcbbca1cc031c820284f705de055a0118a1c78cacb9a4b50816186fecb02bc10",
+      "text_snippet": "Observe el siguiente código:\n\n\n\n\n¿Qué representa el campo carrera?",
+      "image_path": "data/preguntas_img/pregunta_dcbbca1cc031c820284f705de055a0118a1c78cacb9a4b50816186fecb02bc10.png",
+      "options": [
+        "A.\n\nNinguna respuesta es correcta.",
+        "B.\n\nUna relación donde un estudiante puede pertenecer simultáneamente a varias carreras.",
+        "C.\n\nUna relación donde varios estudiantes pueden pertenecer a una misma carrera.",
+        "D.\n\nUna relación donde cada carrera puede pertenecer únicamente a un estudiante."
+      ],
+      "correct_idx": 2
+    },
+    {
+      "id": "c7c847d06bfc0859eacae103c694a7ddb386443074faabf45dec5512909fbea2",
+      "text_snippet": "Observe el siguiente modelo:\n\n\n\n\nPosteriormente el desarrollador agrega el siguiente campo:\n\n\n\n\n¿Qué procedimiento debería realizar antes de ejecutar ",
+      "image_path": "data/preguntas_img/pregunta_c7c847d06bfc0859eacae103c694a7ddb386443074faabf45dec5512909fbea2.png",
+      "options": [
+        "A.\n\nEjecutar primero python manage.py migrate y posteriormente python manage.py makemigrations, ya que la estructura de la base de datos fue modificada.",
+        "B.\n\nReiniciar el servidor con python manage.py runserver, porque los nuevos campos se crean automáticamente.",
+        "C.\n\nNinguna respuesta es correcta.",
+        "D.\n\nEjecutar únicamente python manage.py runserver, ya que Django actualiza automáticamente la base de datos."
+      ],
+      "correct_idx": 2
+    },
+    {
+      "id": "aadc06692145ba19c5c21669f262ec4c0cb36b52634ab7aaba3110d233178fad",
+      "text_snippet": "Analice el siguiente código:\n\n\n\n\n¿Qué imprimirá el programa?",
+      "image_path": "data/preguntas_img/pregunta_aadc06692145ba19c5c21669f262ec4c0cb36b52634ab7aaba3110d233178fad.png",
+      "options": [
+        "A.\n\n[\"Ana\", \"Luis\"].",
+        "B.\n\nAnaLuis",
+        "C.\n\nNinguna respuesta es correcta.",
+        "D.\n\nAna\n\nLuis"
+      ],
+      "correct_idx": 3
+    },
+    {
+      "id": "e69d10bdef1a44ecb19309ec175fb469d7ded89c08804214d53a3fa1f07cb940",
+      "text_snippet": "Un equipo de desarrollo necesita construir una aplicación web que incluya autenticación de usuarios, formularios, acceso a bases de datos y medidas bá",
+      "image_path": "data/preguntas_img/pregunta_e69d10bdef1a44ecb19309ec175fb469d7ded89c08804214d53a3fa1f07cb940.png",
+      "options": [
+        "A.\n\nPermite reutilizar componentes únicamente relacionados con el diseño visual de la aplicación.",
+        "B.\n\nPermite reutilizar componentes, pero obliga a desarrollar desde cero la autenticación y la seguridad.",
+        "C.\n\nNinguna respuesta es correcta.",
+        "D.\n\nPermite reutilizar componentes y funcionalidades comunes desarrollándolas desde cero."
+      ],
+      "correct_idx": 2
+    },
+    {
+      "id": "6d6535dfb755e6d327423065ae5ca079de7f9baa8803357197c68c04c41c6b1e",
+      "text_snippet": "Un desarrollador decide crear una aplicación completamente desde cero sin utilizar ningún framework. ¿Cuál de las siguientes tareas probablemente requ",
+      "image_path": "data/preguntas_img/pregunta_6d6535dfb755e6d327423065ae5ca079de7f9baa8803357197c68c04c41c6b1e.png",
+      "options": [
+        "A.\n\nProgramar manualmente el diseño visual de las páginas web, ya que el servidor genera automáticamente el resto.",
+        "B.\n\nProgramar manualmente funcionalidades comunes como autenticación, formularios y conexión con bases de datos.",
+        "C.\n\nProgramar manualmente la interfaz de usuario, mientras que la gestión de datos se realiza automáticamente.",
+        "D.\n\nNinguna respuesta es correcta."
+      ],
+      "correct_idx": 1
+    },
+    {
+      "id": "01495cefc8254a447c498501c37fec3eb44c3d262603f0cf1893974ce702aa36",
+      "text_snippet": "Un desarrollador debe implementar las siguientes funcionalidades en una aplicación web:\n\n1. Consultar la información de un estudiante.\n2. Registrar un",
+      "image_path": "data/preguntas_img/pregunta_01495cefc8254a447c498501c37fec3eb44c3d262603f0cf1893974ce702aa36.png",
+      "options": [
+        "A.\n\nNinguna respuesta es correcta.",
+        "B.\n\nGET, POST, PUT, DELETE.",
+        "C.\n\nGET, PUT, POST, DELETE.",
+        "D.\n\nPOST, GET, PUT, DELETE."
+      ],
+      "correct_idx": 1
+    },
+    {
+      "id": "47a59a5a3081e85c633818e8d102099271a718804bd28eb6b6270f44bb3ccf09",
+      "text_snippet": "Después de configurar correctamente el proyecto Django, el desarrollador necesita crear un usuario con privilegios administrativos para acceder al pan",
+      "image_path": "data/preguntas_img/pregunta_47a59a5a3081e85c633818e8d102099271a718804bd28eb6b6270f44bb3ccf09.png",
+      "options": [
+        "A.\n\nNinguna respuesta es correcta.",
+        "B.\n\npython manage.py createsuperuser",
+        "C.\n\npython manage.py runserver",
+        "D.\n\npython manage.py migrate"
+      ],
+      "correct_idx": 1
+    }
+  ]
+};
