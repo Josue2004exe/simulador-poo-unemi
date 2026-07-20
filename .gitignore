@@ -10,3 +10,8 @@ simulador_*_offline.html
 # Temporary files
 *.log
 verify_*.webp
+
+# Subfolder repos
+Simulador de BD/
+Simulador de POO/
+
