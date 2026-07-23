@@ -43,7 +43,50 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set up search and filter event listeners for study bank
     document.getElementById('study-search').addEventListener('input', filterStudyBank);
     document.getElementById('study-bookmark-filter').addEventListener('change', filterStudyBank);
+    
+    // Start background preloading of images for instant performance
+    preloadAllBankImages();
 });
+
+// IMAGE CACHING & PRELOADING SYSTEM FOR INSTANT LOADING
+const imageCache = new Map();
+
+function preloadImage(url) {
+    if (!url || imageCache.has(url)) return;
+    const img = new Image();
+    img.decoding = 'async';
+    img.src = url;
+    imageCache.set(url, img);
+}
+
+function preloadNextQuestionImages(qList, currentIndex) {
+    for (let offset of [1, 2, 3, -1]) {
+        const targetIdx = currentIndex + offset;
+        if (targetIdx >= 0 && targetIdx < qList.length) {
+            const q = qList[targetIdx];
+            if (q && q.image_path) {
+                preloadImage(q.image_path);
+            }
+        }
+    }
+}
+
+function preloadAllBankImages() {
+    const doPreload = () => {
+        if (state.questions && state.questions.length > 0) {
+            state.questions.forEach((q, i) => {
+                setTimeout(() => {
+                    if (q.image_path) preloadImage(q.image_path);
+                }, i * 20);
+            });
+        }
+    };
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(doPreload);
+    } else {
+        setTimeout(doPreload, 300);
+    }
+}
 
 // LOCAL STORAGE MANAGEMENT
 function loadLocalStorage() {
@@ -213,9 +256,14 @@ function loadQuizQuestion() {
     const progressPct = ((state.currentIndex + 1) / totalQ) * 100;
     document.getElementById('quiz-progress-bar').style.width = `${progressPct}%`;
     
-    // Load Question Image
+    // Load Question Image (Async & Preloaded for instant response)
     const imgEl = document.getElementById('question-img');
+    imgEl.decoding = 'async';
+    imgEl.loading = 'eager';
     imgEl.src = currentQ.image_path;
+    
+    // Preload next upcoming images in background
+    preloadNextQuestionImages(qList, state.currentIndex);
     
     // Load Bookmark state
     const bookmarkBtn = document.getElementById('btn-bookmark-toggle');
@@ -494,7 +542,7 @@ function submitExam() {
                     ${isCorrect ? 'Correcta' : 'Incorrecta'}
                 </span>
             </div>
-            <div class="review-card-img">
+            <div class="review-card-img" onclick="openImageModal('${q.image_path}')" title="Haz clic para ver la captura ampliada">
                 <img src="${q.image_path}" alt="Pregunta ${idx + 1}">
             </div>
             <div class="review-user-ans ${isCorrect ? 'bg-success' : 'bg-danger'}" style="background-color: ${isCorrect ? 'var(--success-bg)' : 'var(--danger-bg)'}; border: 1px solid ${isCorrect ? 'var(--success-border)' : 'var(--danger-border)'}">
@@ -549,16 +597,17 @@ function renderStudyBank() {
         
         const card = document.createElement('div');
         card.className = 'study-card';
+        card.id = `study-card-${q.id}`;
         
         const isBookmarked = state.bookmarks.includes(q.id);
         
         card.innerHTML = `
-            <div class="study-card-left">
+            <div class="study-card-left" onclick="openImageModal('${q.image_path}')" title="Haz clic para ver la captura ampliada">
                 <img src="${q.image_path}" alt="Pregunta ${mainIdx + 1}">
             </div>
             <div class="study-card-right">
                 <div class="study-card-header">
-                    <span class="study-card-index">Pregunta ${mainIdx + 1} de 125</span>
+                    <span class="study-card-index">Pregunta ${mainIdx + 1} de ${state.questions.length}</span>
                     <button class="btn-bookmark ${isBookmarked ? 'active' : ''}" onclick="toggleStudyBookmark('${q.id}', this)">
                         <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.907c.961 0 1.371 1.24.588 1.81l-3.97 2.883a1 1 0 00-.364 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.971-2.883a1 1 0 00-1.18 0l-3.97 2.883c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.364-1.118l-3.97-2.883c-.783-.57-.372-1.81.587-1.81h4.907a1 1 0 00.95-.69l1.519-4.674z" />
@@ -587,3 +636,147 @@ function renderStudyBank() {
 function filterStudyBank() {
     renderStudyBank();
 }
+
+// --- LIVE AUTOCOMPLETE SEARCH SUGGESTIONS ---
+function handleSearchInput(e) {
+    const query = (e.target ? e.target.value : '').trim();
+    const clearBtn = document.getElementById('clear-search-btn');
+    const suggestionsBox = document.getElementById('study-suggestions-box');
+    
+    if (clearBtn) {
+        if (query.length > 0) clearBtn.classList.remove('hidden');
+        else clearBtn.classList.add('hidden');
+    }
+    
+    // Filter cards
+    filterStudyBank();
+    
+    // Show live suggestions if query length >= 1
+    if (query.length < 1) {
+        if (suggestionsBox) suggestionsBox.classList.add('hidden');
+        return;
+    }
+    
+    const queryLower = query.toLowerCase();
+    const numMatch = queryLower.match(/^pregunta\s*(\d+)$/i) || queryLower.match(/^#?\s*(\d+)$/);
+    
+    let matches = [];
+    if (numMatch) {
+        const qNum = parseInt(numMatch[1], 10);
+        if (qNum >= 1 && qNum <= state.questions.length) {
+            matches.push({
+                index: qNum - 1,
+                q: state.questions[qNum - 1]
+            });
+        }
+    }
+    
+    state.questions.forEach((q, idx) => {
+        if (numMatch && idx === parseInt(numMatch[1], 10) - 1) return;
+        const text = (q.text_snippet || '').toLowerCase();
+        const options = (q.options || []).join(' ').toLowerCase();
+        if (text.includes(queryLower) || options.includes(queryLower)) {
+            matches.push({ index: idx, q: q });
+        }
+    });
+    
+    if (!suggestionsBox) return;
+
+    if (matches.length === 0) {
+        suggestionsBox.innerHTML = `<div class="suggestion-item" style="cursor:default; color:var(--text-muted);">Sin sugerencias para "${escapeHtml(query)}"</div>`;
+        suggestionsBox.classList.remove('hidden');
+        return;
+    }
+    
+    const topMatches = matches.slice(0, 7);
+    
+    suggestionsBox.innerHTML = topMatches.map(m => {
+        const qNum = m.index + 1;
+        let snippet = m.q.text_snippet || '';
+        if (snippet.length > 75) snippet = snippet.substring(0, 75) + '...';
+        
+        const highlightedSnippet = highlightText(snippet, query);
+        
+        return `
+            <div class="suggestion-item" onclick="selectSearchSuggestion('${m.q.id}', ${m.index})">
+                <span class="suggestion-q-num">Pregunta ${qNum} de ${state.questions.length}</span>
+                <span class="suggestion-text">${highlightedSnippet}</span>
+            </div>
+        `;
+    }).join('');
+    
+    suggestionsBox.classList.remove('hidden');
+}
+
+function selectSearchSuggestion(qId, qIndex) {
+    const suggestionsBox = document.getElementById('study-suggestions-box');
+    if (suggestionsBox) suggestionsBox.classList.add('hidden');
+    
+    const searchInput = document.getElementById('study-search');
+    const snippet = state.questions[qIndex].text_snippet.substring(0, 35);
+    searchInput.value = snippet;
+    
+    filterStudyBank();
+    
+    setTimeout(() => {
+        const targetCard = document.getElementById(`study-card-${qId}`);
+        if (targetCard) {
+            targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            targetCard.classList.add('highlight-card');
+            setTimeout(() => targetCard.classList.remove('highlight-card'), 2200);
+        }
+    }, 150);
+}
+
+function clearSearchInput() {
+    const searchInput = document.getElementById('study-search');
+    searchInput.value = '';
+    const clearBtn = document.getElementById('clear-search-btn');
+    const suggestionsBox = document.getElementById('study-suggestions-box');
+    if (clearBtn) clearBtn.classList.add('hidden');
+    if (suggestionsBox) suggestionsBox.classList.add('hidden');
+    filterStudyBank();
+}
+
+function highlightText(text, query) {
+    if (!query) return escapeHtml(text);
+    const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${escapedQuery})`, 'gi');
+    return escapeHtml(text).replace(regex, '<span class="suggestion-match">$1</span>');
+}
+
+function escapeHtml(str) {
+    return (str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// Close suggestions dropdown when clicking outside
+document.addEventListener('click', function(e) {
+    const wrapper = document.querySelector('.search-input-wrapper');
+    const suggestionsBox = document.getElementById('study-suggestions-box');
+    if (wrapper && !wrapper.contains(e.target) && suggestionsBox) {
+        suggestionsBox.classList.add('hidden');
+    }
+});
+
+// --- IMAGE LIGHTBOX MODAL ---
+function openImageModal(imgSrc) {
+    if (!imgSrc) return;
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img-element');
+    modalImg.src = imgSrc;
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeImageModal() {
+    const modal = document.getElementById('image-modal');
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+}
+
+// Keyboard shortcuts (Escape key closes image modal)
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeImageModal();
+    }
+});

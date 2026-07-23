@@ -157,8 +157,9 @@
                                 <span id="bookmark-status-text">Guardar en Favoritos</span>
                             </button>
                         </div>
-                        <div class="question-image-box">
-                            <img id="question-img" src="" alt="Pregunta del simulador">
+                        <div class="question-image-box" onclick="openImageModal(document.getElementById('question-img').src)">
+                            <img id="question-img" src="" alt="Pregunta del simulador" title="Haz clic para ampliar la imagen">
+                            <div class="zoom-hint">🔍 Haz clic en la imagen para ver el código completo y ampliado</div>
                         </div>
                     </div>
 
@@ -201,7 +202,11 @@
                     </button>
                     <h2>Banco de Preguntas para Estudio</h2>
                     <div class="study-filters">
-                        <input type="text" id="study-search" placeholder="Buscar en texto de pregunta..." oninput="filterStudyBank()">
+                        <div class="search-input-wrapper">
+                            <input type="text" id="study-search" placeholder="🔍 Buscar por palabra clave, tema o # de pregunta..." autocomplete="off" oninput="handleSearchInput(event)" onfocus="handleSearchInput(event)">
+                            <button class="clear-search-btn hidden" id="clear-search-btn" onclick="clearSearchInput()" title="Limpiar búsqueda">&times;</button>
+                            <div class="search-suggestions-box hidden" id="study-suggestions-box"></div>
+                        </div>
                         <select id="study-bookmark-filter" onchange="filterStudyBank()">
                             <option value="all">Todas las preguntas</option>
                             <option value="bookmarked">Solo Favoritos</option>
@@ -262,6 +267,17 @@
                 </div>
             </div>
         </main>
+    </div>
+
+    <!-- IMAGE LIGHTBOX MODAL -->
+    <div id="image-modal" class="image-modal-overlay hidden" onclick="closeImageModal()">
+        <div class="image-modal-content" onclick="event.stopPropagation()">
+            <button class="image-modal-close" onclick="closeImageModal()">&times;</button>
+            <div class="image-modal-img-wrap">
+                <img id="modal-img-element" src="" alt="Vista ampliada del código/enunciado">
+            </div>
+            <div class="image-modal-caption">🔍 Usa la rueda del ratón o desplázate para ver el código completo. Haz clic fuera para cerrar.</div>
+        </div>
     </div>
 
     <!-- Loaded JS Data first -->
